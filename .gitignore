@@ -1,0 +1,6 @@
+.idea
+dist
+
+package-lock.json
+/Artist-Nft.zip
+/gulp/version.json
