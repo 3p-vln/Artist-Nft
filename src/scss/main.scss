@@ -2,6 +2,8 @@
 @import "./config/reset";
 @import "./config/fonts";
 @import "./config/base";
+@import "./config/mixins";
 
 @import "./components/header";
+@import "./home/we-are-here";
 @import "./components/footer";

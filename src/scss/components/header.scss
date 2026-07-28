@@ -1,11 +1,10 @@
-@import "../config/mixins";
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  background: $background;
 
   &__content {
     display: flex;
@@ -34,19 +33,20 @@
   }
 
   &__menu{
-    width: 100%;
+    width: 85%;
 
     @include media-breakpoint-down(md) {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100vw;
-      height: 100vh;
+      height: calc(100vh - 62px);
       padding: 62px 15px 15px;
       position: absolute;
-      top: 0;
+      top: 62px;
       right: 100%;
       transition: right 0.3s ease-in-out;
+      background-color: $background;
     }
 
     &_active{

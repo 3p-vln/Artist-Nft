@@ -1,0 +1,356 @@
+.we-are-here{
+  padding-top: 64px;
+  position: relative;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 78px;
+    position: relative;
+    z-index: 5;
+
+    @include media-breakpoint-down(md){
+      padding-top: 64px;
+    }
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  .info{
+    padding-top: 60px;
+    padding-left: 12px;
+
+    @include media-breakpoint-down(sm){
+      padding: 0;
+    }
+
+    &__socials{
+      display: flex;
+      gap: 18px;
+
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+
+    &__inst,
+    &__twitter,
+    &__tg,
+    &__pinterest{
+      width: 24px;
+      height: 24px;
+
+      svg{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__title{
+      font-size: clamp(36px, 5vw, 64px);
+      margin-top: 29px;
+      margin-left: 3px;
+
+      @include media-breakpoint-down(sm){
+        margin: 0;
+        line-height: 1.1;
+      }
+    }
+
+    &__text{
+      font-size: clamp(15px, 2vw, 16px);
+      letter-spacing: 0.1px;
+      line-height: 1.75;
+      max-width: 270px;
+      margin-top: 16px;
+      margin-left: 3px;
+
+      @include media-breakpoint-down(sm){
+        line-height: 1.6;
+        margin-top: 7px;
+        margin-left: 0;
+        max-width: 75%;
+      }
+    }
+
+    &__btns{
+      margin-top: 40px;
+      display: flex;
+      gap: 12px;
+      margin-left: 2px;
+
+      @include media-breakpoint-down(sm){
+        margin-top: 21px;
+        margin-left: 0;
+      }
+    }
+
+    &__premium{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 700;
+      padding: 20px 22px;
+      border-radius: 20px;
+
+      @include media-breakpoint-down(md){
+        padding: 10px 15px;
+        border-radius: 12px;
+      }
+
+      svg{
+        width: 24px;
+        height: 24px;
+
+        @include media-breakpoint-down(md){
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    &__discover{
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 700;
+      padding: 20px 37px;
+      border-radius: 20px;
+
+      @include media-breakpoint-down(md){
+        padding: 19px 29px;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  .illustrate{
+    position: relative;
+    aspect-ratio: 0.75;
+    max-width: 475px;
+    width: 100%;
+
+    @include media-breakpoint-down(md){
+      max-width: calc(340px + (475 - 340) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    @include media-breakpoint-down(sm){
+      aspect-ratio: 0.9885;
+      max-width: 100%;
+    }
+
+    &__girl{
+      margin-right: 15px;
+      position: relative;
+      width: 96.6%;
+      height: 100%;
+
+      @include media-breakpoint-down(sm){
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    &__gradient-bg{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      background: $blueToPurpleGradient;
+
+      @include media-breakpoint-down(sm){
+        height: 87%;
+      }
+    }
+
+    &__img{
+      position: absolute;
+      right: -1px;
+      top: 0;
+      width: 149%;
+      height: 100%;
+
+      @include media-breakpoint-down(lg){
+        width: calc(129% + (221 - 129) * ((100vw - 1024px) / (1439 - 1024)));
+      }
+
+      @include media-breakpoint-down(md){
+        width: 129%;
+      }
+
+      @include media-breakpoint-down(sm){
+        width: 100%;
+        overflow: hidden;
+        right: -13px;
+        z-index: 2;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
+
+        @include media-breakpoint-down(sm){
+          width: auto;
+        }
+      }
+    }
+
+    &__decor{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__ellipse{
+      position: absolute;
+
+      &_smal {
+        top: -5%;
+        right: 4%;
+        width: 10px;
+        height: 10px;
+
+        @include media-breakpoint-down(sm){
+          display: none;
+        }
+      }
+
+      &_big {
+        left: -11.2%;
+        top: 23.7%;
+        width: 25px;
+        height: 25px;
+
+        @include media-breakpoint-down(sm){
+          left: 26%;
+          top: 9%;
+        }
+      }
+    }
+
+    &__star{
+      position: absolute;
+
+      &_top{
+        width: 46px;
+        height: 62px;
+        left: -16.5%;
+        top: -3%;
+
+        @include media-breakpoint-down(sm){
+          width: 30px;
+          height: 41px;
+          left: -4%;
+          top: 0;
+        }
+      }
+
+      &_bottom{
+        width: 36px;
+        height: 48px;
+        left: -38.4%;
+        bottom: 19.3%;
+
+        @include media-breakpoint-down(md){
+          left: -25%;
+        }
+
+        @include media-breakpoint-down(sm){
+          left: auto;
+          bottom: auto;
+          top: -2%;
+          right: 6%;
+        }
+      }
+    }
+  }
+
+  .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    &__blur{
+      position: absolute;
+      width: 70vw;
+      left: -25%;
+      top: -10%;
+
+      @include media-breakpoint-down(l){
+        width: 88vw;
+        left: -45%;
+        top: -5%;
+      }
+
+      @include media-breakpoint-down(md){
+        width: 110vw;
+        left: -50%;
+      }
+
+      @include media-breakpoint-down(sm){
+        left: auto;
+        right: -55%;
+        top: 10%;
+        width: 220%;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text{
+      position: absolute;
+      font-size: clamp(50px, 6vw, 80px);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 0.5px $whiteColor;
+      text-transform: uppercase;
+      opacity: 0.2;
+    }
+
+    &__make{
+      top: 11.4%;
+      left: calc(-1.2% + (270 + 1.2) * ((100vw - 1440px) / (1920 - 1440)));
+
+      @include media-breakpoint-down(lg){
+        left: -1.2%;
+      }
+
+      @include media-breakpoint-down(sm){
+        top: 9.6%;
+        left: auto;
+        right: calc(-15.2% + (120 + 15.2) * ((100vw - 375px) / (768 - 375)));
+      }
+    }
+
+    &__war{
+      bottom: 1%;
+      right: 41.5%;
+
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+  }
+}
