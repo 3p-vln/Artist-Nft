@@ -1,0 +1,11 @@
+@import "../components/btn";
+
+body {
+  background-color: $background;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

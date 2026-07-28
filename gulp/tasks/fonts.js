@@ -20,7 +20,7 @@ export const ttfToWoff = () => {
 }
 
 export const fontsStyle = () => {
-	let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+	let fontsFile = `${app.path.srcFolder}/scss/config/fonts.scss`;
 	fs.readdir(app.path.build.fonts, function (err, fontsFiles){
 		if(fontsFiles){
 			if(!fs.existsSync(fontsFile)){
@@ -50,7 +50,7 @@ export const fontsStyle = () => {
 						else if(fontWeight.toLowerCase() === 'bold'){
 							fontWeight = 700;
 						}
-						else if(fontName.toLowerCase() === 'extrabold' || fontName.toLowerCase() === 'heavy'){
+						else if(fontName.toLowerCase() === 'extrabld' || fontName.toLowerCase() === 'heavy'){
 							fontWeight = 800;
 						}
 						else if(fontName.toLowerCase() === 'black'){
@@ -67,7 +67,7 @@ export const fontsStyle = () => {
 					}
 				}
 			} else {
-				console.log("Файл scss/fonts.scss вже створений. Для оновлення файлу необхідно його видалити!");
+				console.log("Файл scss/config/fonts.scss вже створений. Для оновлення файлу необхідно його видалити!");
 			}
 		}
 	});

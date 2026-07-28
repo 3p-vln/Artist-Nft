@@ -1,0 +1,26 @@
+$maxWidth: 1920;
+$minWidth: 320;
+$maxWidthContainer: 1170;
+$containerWidth: 1140;
+
+$md1: 1650;
+$md2: 1420;
+$md3: 1024;
+$md4: 768;
+$md5: 576;
+$md6: 375;
+
+$background: #1D1F21;
+$whiteColor: #FCFFFF;
+$hoverColor: #D1B5FF;
+$mainDarkColor: #212426;
+$dropdownBgColor: #212426;
+
+$blueToPurpleGradient: linear-gradient(45deg, #68C9FF 0%, #D1B5FF 99%);
+$blueToPurpleDarkGradient: linear-gradient(45deg, rgba(#68C9FF, 0.1) 0%, rgba(#D1B5FF, 0.1) 99%);
+
+$mainFont: 'ProximaNova';
+$fontFamily: $mainFont, sans-serif;
+$fontWeight: 300;
+$fontColor: $whiteColor;
+$fontSize: 16;

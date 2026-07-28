@@ -1,3 +1,5 @@
-import {main} from "./second";
+import {burgerMenu} from "./components/burger-menu";
 
-main();
+document.addEventListener('DOMContentLoaded', () => {
+	burgerMenu()
+})

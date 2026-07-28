@@ -12,6 +12,7 @@ import { ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteCreate } from "./gulp/tasks/svgSprite.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
+import { php } from "./gulp/tasks/php.js";
 
 global.app = {
 	isBuild: process.argv.includes("--build"),
@@ -26,13 +27,14 @@ function watcher() {
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
+	gulp.watch(path.watch.php, php)
 }
 
 export { svgSpriteCreate }
 
 const fonts = gulp.series(ttfToWoff, fontsStyle);
 
-const mainTask = gulp.series(fonts, gulp.parallel(html, scss, js, images));
+const mainTask = gulp.series(fonts, gulp.parallel(html, scss, js, images, php));
 
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTask);

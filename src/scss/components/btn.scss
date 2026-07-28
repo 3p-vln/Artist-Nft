@@ -1,0 +1,24 @@
+.btn{
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 23px;
+  border-radius: 12px;
+
+  &_light{
+    background: $blueToPurpleGradient;
+    color: $background;
+  }
+
+  &_dark{
+    background: $blueToPurpleDarkGradient;
+
+    span {
+      background-image: $blueToPurpleGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

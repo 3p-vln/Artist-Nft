@@ -1,5 +1,212 @@
-.header{
-  background: purple;
-  padding: 30px;
-  text-align: center;
+@import "../config/mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 12px;
+
+    @include media-breakpoint-down(lg) {
+      gap: 5px;
+    }
+
+    @include media-breakpoint-down(md) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 145px;
+    height: 30px;
+    margin: 0 8px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__menu{
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      padding: 62px 15px 15px;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      transition: right 0.3s ease-in-out;
+    }
+
+    &_active{
+      right: 0;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Manrope;
+    font-weight: 200;
+    font-size: 14px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &__list {
+      display: flex;
+      padding-top: 2px;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-item {
+        padding: 8px 13px;
+        transition: color 0.5s ease-in-out;
+
+        @include media-breakpoint-down(lg) {
+          padding: 8px;
+        }
+
+        &:hover {
+          color: $hoverColor;
+        }
+      }
+
+      .nft a {
+        display: flex;
+        gap: 8px;
+
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__dropdown {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 12px;
+      background: $dropdownBgColor;
+      border-radius: 7px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        padding: 6px 5px;
+      }
+    }
+
+    &__premium {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    align-items: center;
+    gap: 10px;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+    }
+
+    &__premium {
+      padding: 10px 8.5px;
+      border-radius: 9px;
+      width: 32px;
+      height: 32px;
+      background: $blueToPurpleDarkGradient;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__btn {
+      width: 14px;
+      height: 12px;
+      margin: 5px;
+      position: relative;
+
+      span {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: $whiteColor;
+        border-radius: 5px;
+        right: 0;
+      }
+
+      span {
+        &:nth-child(2) {
+          top: 50%;
+        }
+
+        &:nth-child(1) {
+          width: 60%;
+          transition: width 0.5s ease-in-out, transform 0.5s ease-in-out, top 0.5s ease-in-out, bottom 0.5s ease-in-out;
+        }
+
+        &:nth-child(3) {
+          top: auto;
+          bottom: -2px;
+          width: 70%;
+          transition: width 0.5s ease-in-out, transform 0.5s ease-in-out, top 0.5s ease-in-out, bottom 0.5s ease-in-out;
+        }
+      }
+
+      &_active {
+        span {
+          &:nth-child(2) {
+            width: 0;
+          }
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            width: 100%;
+            top: 50%;
+          }
+
+          &:nth-child(1){
+            transform: translateY(-50%) rotate(45deg);
+          }
+
+          &:nth-child(3) {
+            bottom: auto;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
 }
