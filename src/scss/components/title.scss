@@ -1,0 +1,23 @@
+.title{
+  font-weight: 700;
+
+  &__subtitle{
+    font-size: clamp(14px, 2vw, 18px);
+    letter-spacing: 1.6px;
+    margin-bottom: 13px;
+    width: fit-content;
+    background-image: $blueToPurpleGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-down(sm){
+      margin-bottom: 11px;
+    }
+  }
+
+  &__main{
+    font-size: clamp(26px, 5vw, 36px);
+  }
+}

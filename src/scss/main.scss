@@ -3,7 +3,11 @@
 @import "./config/fonts";
 @import "./config/base";
 @import "./config/mixins";
+@import "../../node_modules/swiper/swiper";
+@import "./components/btn";
+@import "./components/title";
 
 @import "./components/header";
 @import "./home/we-are-here";
+@import "./home/biography";
 @import "./components/footer";
