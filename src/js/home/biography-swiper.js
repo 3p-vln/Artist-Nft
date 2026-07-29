@@ -8,7 +8,7 @@ export const biographySwiper = new Swiper('.info__date-swiper.swiper', {
 		375: {
 			spaceBetween: 25,
 		},
-		1440: {
+		1024: {
 			spaceBetween: 35,
 		},
 		1920: {
