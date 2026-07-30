@@ -8,10 +8,27 @@
   &_light{
     background: $blueToPurpleGradient;
     color: $background;
+
+    @include media-breakpoint-up(md){
+      transition: box-shadow 0.5s ease-in-out;
+    }
+
+    &:hover{
+      @include media-breakpoint-up(md){
+        box-shadow:
+                0 0 2px #68c9ff,
+                0 0 6px #68c9ff,
+                0 0 12px #d1b5ff;
+      }
+    }
   }
 
   &_dark{
     background: $blueToPurpleDarkGradient;
+
+    @include media-breakpoint-up(md){
+      transition: box-shadow 0.5s ease-in-out;
+    }
 
     span {
       background-image: $blueToPurpleGradient;
@@ -19,6 +36,15 @@
       -webkit-background-clip: text;
       color: transparent;
       -webkit-text-fill-color: transparent;
+    }
+
+    &:hover{
+      @include media-breakpoint-up(md){
+        box-shadow:
+                0 0 2px rgb(104 201 255 / 0.1),
+                0 0 6px rgb(104 201 255 / 0.1),
+                0 0 12px rgb(209 181 255 / 0.1);
+      }
     }
   }
 }

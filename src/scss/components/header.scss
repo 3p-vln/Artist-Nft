@@ -26,7 +26,7 @@
     height: 30px;
     margin: 0 8px;
 
-    svg {
+    img {
       width: 100%;
       height: 100%;
     }
@@ -79,14 +79,25 @@
 
       &-item {
         padding: 8px 13px;
-        transition: color 0.5s ease-in-out;
 
         @include media-breakpoint-down(lg) {
           padding: 8px;
         }
 
         &:hover {
-          color: $hoverColor;
+          a {
+            @include media-breakpoint-up(md) {
+              text-shadow: 0 0 2px #68c9ff,
+              0 0 6px #68c9ff,
+              0 0 12px #d1b5ff;
+            }
+          }
+        }
+
+        a {
+          @include media-breakpoint-up(md) {
+            transition: text-shadow 0.5s ease-in-out;
+          }
         }
       }
 
@@ -94,7 +105,7 @@
         display: flex;
         gap: 8px;
 
-        svg {
+        img {
           width: 14px;
           height: 14px;
         }
@@ -115,7 +126,7 @@
       background: $dropdownBgColor;
       border-radius: 7px;
 
-      svg {
+      img {
         width: 18px;
         height: 18px;
         padding: 6px 5px;
@@ -145,7 +156,7 @@
       height: 32px;
       background: $blueToPurpleDarkGradient;
 
-      svg {
+      img {
         width: 100%;
         height: 100%;
       }
