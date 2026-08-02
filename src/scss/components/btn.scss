@@ -47,4 +47,37 @@
       }
     }
   }
+
+  &_black{
+    background: $background;
+    font-size: clamp(15px, 2vw, 18px);
+    font-weight: 700;
+    padding: 23px 37px;
+    border-radius: 15px;
+
+    @include media-breakpoint-up(md){
+      transition: box-shadow 0.5s ease-in-out;
+    }
+
+    @include media-breakpoint-down(sm){
+      padding: 19px 30px;
+    }
+
+    span {
+      background-image: $blueToPurpleGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:hover{
+      @include media-breakpoint-up(md){
+        box-shadow:
+                0 0 2px rgb(104 201 255 / 0.1),
+                0 0 6px rgb(104 201 255 / 0.1),
+                0 0 12px rgb(209 181 255 / 0.1);
+      }
+    }
+  }
 }
