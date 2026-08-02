@@ -1,0 +1,34 @@
+.nfts{
+  margin-top: 12px;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 15px;
+    margin-top: 25px;
+  }
+
+  &__swiper{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    overflow: visible !important;
+    z-index: 3;
+  }
+
+  &_nft{
+    max-width: 350px;
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease 0s;
+
+    @include media-breakpoint-down(sm){
+      max-width: 280px;
+    }
+
+    &.swiper-slide-active {
+      @include media-breakpoint-up(sm){
+        transform: translate(0px, -31px);
+      }
+    }
+  }
+}

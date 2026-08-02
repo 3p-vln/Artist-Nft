@@ -46,10 +46,12 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^6.1.0",
     "sass": "^1.101.3",
-    "swiper": "^14.0.6",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
     "webpack": "^5.108.4",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "swiper": "^14.0.7"
   }
 }

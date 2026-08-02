@@ -1,0 +1,157 @@
+.nft-card{
+  border-radius: 12px;
+  max-width: 350px;
+  background-color: $lightBgColor;
+
+  @include media-breakpoint-down(sm){
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+  }
+
+  &__title{
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 700;
+    width: fit-content;
+    background-image: $blueToPurpleGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    padding: 21px 20px 23px;
+    letter-spacing: 1.5px;
+
+    @include media-breakpoint-down(sm){
+      order: 2;
+      padding: 0;
+      margin: 15px 0 9px;
+    }
+  }
+
+  .picture{
+    position: relative;
+    aspect-ratio: 1/1;
+    padding: 0 48px;
+
+    @include media-breakpoint-down(sm){
+      order: 1;
+      border-radius: 12px;
+      padding: 0 35px;
+    }
+
+    &_blue{
+      background: $blueCardBg;
+    }
+
+    &_purple{
+      background: $purpleCardBg;
+    }
+
+    &_green{
+      background: $greenCardBg;
+    }
+
+    &__ellipses-bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__img{
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
+      }
+    }
+  }
+
+  .info{
+    padding: 22px 25px 20px;
+
+    @include media-breakpoint-down(sm){
+      order: 3;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    &__title{
+      font-size: clamp(18px, 2vw, 20px);
+      font-weight: 700;
+      margin-bottom: 8px;
+
+      @include media-breakpoint-down(sm){
+        margin-bottom: 11px;
+      }
+    }
+
+    &__text{
+      font-size: clamp(12px, 1.5vw, 14px);
+      max-width: 257px;
+      letter-spacing: 0.1px;
+      line-height: 1.4;
+    }
+  }
+
+  .price{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 13px 20px 17px 24px;
+
+    @include media-breakpoint-down(sm){
+      order: 4;
+      padding: 0;
+      padding-top: 12px;
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 87%;
+      height: 1px;
+      top: 0;
+      background-color: $whiteColor;
+      opacity: 0.2;
+
+      @include media-breakpoint-down(sm){
+        width: 100%;
+      }
+    }
+
+    &__coast{
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 700;
+
+      @include media-breakpoint-down(sm){
+        letter-spacing: 1px;
+      }
+    }
+
+    &__btn{
+      padding: 18px 32px;
+
+      @include media-breakpoint-down(sm){
+        padding: 13px 21px;
+        border-radius: 6px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
