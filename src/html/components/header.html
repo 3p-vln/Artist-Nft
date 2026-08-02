@@ -6,7 +6,7 @@
       </a>
       
       <nav class="header__menu">
-        <div class="menu ">
+        <div class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
               <a href="#">Main page</a>
@@ -43,9 +43,23 @@
 
           <ul class="menu__btns">
             <li class="menu__dropdown">
-              ENG
+              <div class="dropdown">
+                <button class="dropdown__btn">
+                  <input type="text" class="dropdown__input_hidden">
 
-              <img src="@img/svg/arrow.svg" alt="arrow">
+                  <span class="dropdown__selected">
+                    ENG
+                  </span>
+
+                  <img src="@img/svg/arrow.svg" alt="arrow">
+                </button>
+
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="eng">ENG</li>
+                  <li class="dropdown__list-item" data-value="ua">UA</li>
+                  <li class="dropdown__list-item" data-value="PL">PL</li>
+                </ul>
+              </div>
             </li>
 
             <li class="menu__auth">

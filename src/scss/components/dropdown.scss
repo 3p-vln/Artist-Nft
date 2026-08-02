@@ -1,0 +1,56 @@
+.dropdown{
+  position: relative;
+
+  &__btn{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: $dropdownBgColor;
+    border-radius: 7px;
+
+    img {
+      width: 18px;
+      height: 18px;
+      padding: 6px 5px;
+      transition: rotate 0.3s ease-in-out;
+    }
+
+    &_active{
+      img {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  &__list{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+    background: $dropdownBgColor;
+    border-radius: 7px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+    &_active{
+      padding: 8px 12px;
+      height: 78px;
+    }
+  }
+
+  &__input_hidden{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+}

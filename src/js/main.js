@@ -1,7 +1,9 @@
-import {burgerMenu} from "./components/burger-menu";
-import {biographySwiper} from "./home/biography-swiper";
+import {BurgerMenu} from "./components/burger-menu";
+import {BiographySwiper} from "./home/biography-swiper";
+import {Dropdown} from "./components/dropdown";
 
 document.addEventListener('DOMContentLoaded', () => {
-	burgerMenu();
-	biographySwiper;
+	new BurgerMenu();
+	new Dropdown(".menu__dropdown");
+	new BiographySwiper()
 })
