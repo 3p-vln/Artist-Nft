@@ -1,0 +1,234 @@
+.contact{
+  padding-top: 90px;
+  padding-bottom: 95px;
+  position: relative;
+
+  @include media-breakpoint-down(sm){
+    padding-top: 44px;
+    padding-bottom: 32px;
+  }
+
+  .bg{
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .diamonds{
+      position: absolute;
+      top: 29%;
+      right: 76%;
+      width: 24%;
+      height: 53%;
+
+      @include media-breakpoint-down(sm){
+        width: 32%;
+        height: 8%;
+        top: 3%;
+        right: 0;
+      }
+
+      &__purple{
+        position: absolute;
+        left: -28%;
+        top: 7%;
+
+        @include media-breakpoint-down(sm){
+          width: 36px;
+          height: 36px;
+          left: 28%;
+          top: -9%;
+          rotate: -74deg;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(0.5px);
+          }
+        }
+      }
+
+      &__blue-top{
+        position: absolute;
+        filter: blur(3px);
+        width: 164px;
+        right: 3%;
+        top: -6%;
+        rotate: -3deg;
+
+        @include media-breakpoint-down(sm){
+          width: 101px;
+          left: 45%;
+          top: -31%;
+          rotate: 2deg;
+        }
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__blue-buttom{
+        position: absolute;
+        bottom: -30px;
+        right: -10px;
+        rotate: 60deg;
+
+        @include media-breakpoint-down(sm){
+          display: none;
+        }
+      }
+    }
+
+    &__cube{
+      position: absolute;
+      left: 76%;
+      top: 15%;
+      filter: blur(6px);
+
+      @include media-breakpoint-down(md){
+        left: 65%;
+      }
+
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+  }
+
+  &__content{
+    position: relative;
+    z-index: 3;
+    max-width: 540px;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(xs){
+      max-width: 100%;
+    }
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(xs){
+      align-items: flex-start;
+    }
+
+    &__subtitle{
+      margin-bottom: 5px;
+
+      @include media-breakpoint-down(xs){
+        margin-bottom: 8px;
+      }
+    }
+
+    &__main{
+      text-align: center;
+      line-height: 1.4;
+
+      @include media-breakpoint-down(xs){
+        text-align: start;
+        line-height: 1.26;
+        padding-right: 45px;
+      }
+    }
+  }
+
+  .form{
+    max-width: 410px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(xs){
+      margin-top: 19px;
+      max-width: 100%;
+    }
+
+    &__item{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 21px;
+
+      &:nth-child(3){
+        margin-bottom: 15px;
+      }
+    }
+
+    &__label{
+      font-size: 14px;
+    }
+
+    &__input{
+      font-size: 16px;
+      padding: 21px 32px;
+      width: 100%;
+      border-radius: 9px;
+      background: $lightBgColor;
+
+      &_big{
+        height: 182px;
+        resize: none;
+      }
+    }
+
+    &__btn{
+      font-size: 18px;
+      width: 100%;
+      padding: 21px 23px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .checkbox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    letter-spacing: -0.8px;
+
+    &__real{
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      margin-left: 10px;
+
+      &:checked + .checkbox__custom{
+        background: $blueToPurpleGradient;
+      }
+    }
+
+    &__custom{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 7px;
+      border: 1px solid $lightGray;
+    }
+
+    a{
+      position: relative;
+      margin: 0 10px;
+      color: $blueCardBg;
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: $blueCardBg;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

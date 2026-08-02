@@ -1,9 +1,24 @@
 .nfts{
+  position: relative;
   margin-top: 12px;
 
   @include media-breakpoint-down(sm) {
     padding-left: 15px;
     margin-top: 25px;
+  }
+
+  &__blur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include media-breakpoint-down(sm) {
+      top: auto;
+      bottom: 0;
+      left: -75%;
+      transform: translateY(0);
+    }
   }
 
   &__swiper{
