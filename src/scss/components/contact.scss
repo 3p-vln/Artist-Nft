@@ -203,17 +203,12 @@
   }
 
   .checkbox{
-    display: flex;
-    align-items: center;
     position: relative;
-    cursor: pointer;
-    width: fit-content;
 
     &__real{
       width: 20px;
       height: 20px;
       opacity: 0;
-      margin-left: 10px;
 
       &:checked + .checkbox__custom{
         background: $blueToPurpleGradient;
@@ -229,8 +224,11 @@
     }
 
     label{
-      letter-spacing: -0.8px;
       display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: fit-content;
+      letter-spacing: -0.8px;
       gap: 10px;
 
       a{
@@ -248,6 +246,5 @@
         }
       }
     }
-
   }
 }
