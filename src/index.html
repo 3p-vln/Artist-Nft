@@ -2,22 +2,23 @@
 <html lang="en">
 @@include('html/components/head.html', { 'title': 'pechen.arts - We are here to inspire and share art', 'srcStyle': 'main'} )
 <body>
+<div class="wrapper">
+  @@include('html/components/header.html')
 
-@@include('html/components/header.html')
+  <main class="main">
+    @@include('html/home/we-are-here.html')
 
-<main class="main">
-  @@include('html/home/we-are-here.html')
+    @@include('html/home/biography.html')
 
-  @@include('html/home/biography.html')
+    @@include('html/home/get-the-premium.html')
 
-  @@include('html/home/get-the-premium.html')
+    @@include('html/home/nfts.html')
 
-  @@include('html/home/nfts.html')
+    @@include('html/components/contact.html')
+  </main>
 
-  @@include('html/components/contact.html')
-</main>
-
-@@include('html/components/footer.html')
+  @@include('html/components/footer.html')
+</div>
 
 <script src="js/main.min.js"></script>
 </body>
