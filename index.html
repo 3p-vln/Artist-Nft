@@ -833,15 +833,16 @@
 
         <button class="form__btn btn btn_light" type="submit">Send message</button>
 
-        <label class="form__submit checkbox">
-          <input type="checkbox" class="checkbox__real" id="check">
-          <span class="checkbox__custom"></span>
-
-          I agree with
-          <a href="#">Privacy Policy</a>
-          and
-          <a href="#">Terms of use</a>
-        </label>
+        <div class="form__submit checkbox">
+          <label>
+            <input type="checkbox" class="checkbox__real" id="check">
+            <span class="checkbox__custom"></span>
+            I agree with
+            <a href="#">Privacy Policy</a>
+            and
+            <a href="#">Terms of use</a>
+          </label>
+        </div>
       </form>
     </div>
   </div>
@@ -849,7 +850,40 @@
 </main>
 
 <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <a href="#" class="footer__logo">
+        <img src="img/svg/logo-main.svg" alt="logo">
+      </a>
+      
+      <ul class="footer__menu menu">
+        <li class="menu__item"><a href="#">Privacy policy</a></li>
+        <li class="menu__item"><a href="#">Terms of use</a></li>
+      </ul>
 
+      <div class="footer__socials">
+        <a href="" class="footer__inst">
+          <img src="img/svg/instagram.svg" alt="inst">
+        </a>
+
+        <a href="" class="footer__twitter">
+          <img src="img/svg/twitter.svg" alt="twitter">
+        </a>
+
+        <a href="" class="footer__tg">
+          <img src="img/svg/telegram.svg" alt="tg">
+        </a>
+
+        <a href="" class="footer__pinterest">
+          <img src="img/svg/pinterest.svg" alt="pinterest">
+        </a>
+      </div>
+
+      <div class="footer__all-rights">
+        All rights reserved © 2022
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="js/main.min.js"></script>
