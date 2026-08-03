@@ -39,13 +39,17 @@ export class BurgerMenu{
 		}
 	}
 	
+	preventScroll(e) {
+		e.preventDefault();
+	}
+	
 	disableScroll() {
-		window.addEventListener('wheel', preventDefault, { passive: false });
-		window.addEventListener('touchmove', preventDefault, { passive: false });
+		window.addEventListener('wheel', this.preventScroll, { passive: false });
+		window.addEventListener('touchmove', this.preventScroll, { passive: false });
 	}
 	
 	enableScroll() {
-		window.removeEventListener('wheel', preventDefault);
-		window.removeEventListener('touchmove', preventDefault);
+		window.removeEventListener('wheel', this.preventScroll);
+		window.removeEventListener('touchmove', this.preventScroll);
 	}
 }
