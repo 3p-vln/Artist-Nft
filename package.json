@@ -52,6 +52,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "just-validate": "^4.3.0",
     "swiper": "^14.0.7"
   }
 }

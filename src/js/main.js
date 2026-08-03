@@ -3,6 +3,7 @@ import {BiographySwiper} from "./home/biography-swiper";
 import {Dropdown} from "./components/dropdown";
 import {NftsSwiper} from "./home/nfts-swiper";
 import {ContactParallax} from "./components/contact-parallax";
+import {ContactValidate} from "./components/contact-validate";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
@@ -10,4 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	new BiographySwiper()
 	new NftsSwiper()
 	new ContactParallax();
+	new ContactValidate();
 })
