@@ -1,0 +1,250 @@
+.pictures-grid{
+  position: relative;
+  margin-top: 29px;
+  margin-bottom: 80px;
+
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 24px 30px;
+    margin: 0 auto;
+    max-width: 1110px;
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }
+
+  .item{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &:hover{
+      .item__hover{
+        right: 0;
+      }
+    }
+
+    &__big{
+      .item__img{
+        aspect-ratio: 1.738;
+      }
+
+      &_left {
+        grid-column: 1/3;
+
+        @include media-breakpoint-down(sm) {
+          grid-column: 1/2;
+        }
+      }
+
+      &_right{
+        grid-column: 2/4;
+
+        @include media-breakpoint-down(md) {
+          grid-column: 2/3;
+
+          .item__img{
+            aspect-ratio: 0.833;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          grid-column: 1/2;
+
+          .item__img{
+            aspect-ratio: 1.738;
+          }
+        }
+      }
+
+      &_adapt{
+        .item__img{
+          aspect-ratio: 0.833;
+        }
+
+        @include media-breakpoint-down(md) {
+          grid-column: 1/3;
+
+          .item__img{
+            aspect-ratio: 1.738;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          grid-column: 1/2;
+
+          .item__img{
+            aspect-ratio: 0.833;
+          }
+        }
+      }
+    }
+
+    &__img{
+      aspect-ratio: 0.833;
+      height: 100%;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__hover{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: $blueToPurpleGradientCardBg;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 100%;
+      padding: 15px;
+      padding-bottom: 10px;
+      transition: right 0.5s ease-in-out;
+    }
+
+    &__title{
+      font-size: clamp(28px, 5vw, 36px);
+      margin-bottom: 10px;
+    }
+
+    &__info{
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+      max-width: 257px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down(sm) {
+        line-height: 1.2;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__price{
+      font-size: clamp(20px, 5vw, 26px);
+      font-weight: 600;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__btns{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @include media-breakpoint-down(sm) {
+        gap: 5px;
+      }
+    }
+
+    &__buy{
+      padding: 23px 45px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 19px 30px;
+      }
+    }
+
+    &__viev{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 20px 30px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 15px 20px;
+      }
+    }
+
+    .lock{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 15px;
+      background-color: $mainDarkColorCardBg;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      &__avalaible{
+        font-size: 18px;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+        width: fit-content;
+        background-image: $blueToPurpleGradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 5px;
+      }
+
+      &__text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        max-width: 285px;
+        width: 100%;
+        margin-bottom: 19px;
+
+        p{
+          font-size: 26px;
+          font-weight: 700;
+        }
+      }
+
+      &__btn{
+        display: flex;
+
+        .btn{
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 20px 13px 20px 30px;
+        }
+      }
+    }
+  }
+
+  .bg {
+    position: absolute;
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    &__blur{
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -90,18 +90,19 @@
         }
 
         &:hover {
-          a {
-            @include media-breakpoint-up(md) {
-              text-shadow: 0 0 2px #68c9ff,
-              0 0 6px #68c9ff,
-              0 0 12px #d1b5ff;
-            }
-          }
-        }
-
-        a {
           @include media-breakpoint-up(md) {
-            transition: text-shadow 0.5s ease-in-out;
+            background: $blueToPurpleDarkGradient;
+            border-radius: 8px;
+
+            a {
+              background-image: $blueToPurpleGradient;
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              -webkit-text-fill-color: transparent;
+              font-weight: 600;
+              width: fit-content;
+            }
           }
         }
       }

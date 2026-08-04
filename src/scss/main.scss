@@ -1,18 +1,10 @@
-@import "./config/vars";
-@import "./config/reset";
-@import "./config/fonts";
 @import "./config/base";
-@import "./config/mixins";
-@import "../../node_modules/swiper/swiper";
-@import "./components/btn";
+@import "../../node_modules/swiper/swiper.css";
 @import "./components/title";
-@import "./components/dropdown";
 @import "./components/nft-card";
 @import "./components/contact";
 
-@import "./components/header";
 @import "./home/we-are-here";
 @import "./home/biography";
 @import "./home/get-the-premium";
 @import "./home/nfts";
-@import "./components/footer";

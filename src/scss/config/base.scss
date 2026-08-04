@@ -1,3 +1,10 @@
+@import "./../config/vars";
+@import "./../config/reset";
+@import "./../config/fonts";
+@import "./../config/mixins";
+@import "./../components/dropdown";
+@import "./../components/btn";
+
 html, body {
   position: relative;
   width: 100vw;
@@ -29,3 +36,6 @@ body {
   position: relative;
   z-index: 3;
 }
+
+@import "./../components/header";
+@import "./../components/footer";
