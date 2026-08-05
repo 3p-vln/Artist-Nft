@@ -1,9 +1,7 @@
 import {BurgerMenu} from "./components/burger-menu";
 import {Dropdown} from "./components/dropdown";
-import {GridHover} from "./pricing/grid-hover";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
 	new Dropdown(".menu__dropdown");
-	new GridHover('.pictures-grid__content')
 })

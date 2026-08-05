@@ -25,12 +25,6 @@
     border-radius: 12px;
     overflow: hidden;
 
-    &:hover{
-      .item__hover{
-        right: 0;
-      }
-    }
-
     &__big{
       .item__img{
         aspect-ratio: 1.738;
@@ -112,6 +106,10 @@
       padding: 15px;
       padding-bottom: 10px;
       transition: right 0.5s ease-in-out;
+
+      &_active{
+        right: 0;
+      }
     }
 
     &__title{

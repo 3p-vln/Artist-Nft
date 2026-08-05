@@ -14,6 +14,12 @@ export class BurgerMenu{
 			this.menu.classList.toggle('menu_active');
 			this.burgerBtn.classList.toggle('burger-menu__btn_active');
 			
+			if(this.menu.classList.contains('menu_active')){
+				this.menu.style.right = 0;
+			} else {
+				this.menu.style.right = '100%';
+			}
+			
 			this.scrollLock()
 		})
 	}
@@ -33,23 +39,9 @@ export class BurgerMenu{
 		if(!this.burgerBtn || !this.menu) return;
 		
 		if(this.burgerBtn.classList.contains('burger-menu__btn_active') && this.menu.classList.contains('menu_active')) {
-			this.disableScroll()
+			document.body.style.overflow = 'hidden';
 		} else {
-			this.enableScroll();
+			document.body.style.overflow = '';
 		}
-	}
-	
-	preventScroll(e) {
-		e.preventDefault();
-	}
-	
-	disableScroll() {
-		window.addEventListener('wheel', this.preventScroll, { passive: false });
-		window.addEventListener('touchmove', this.preventScroll, { passive: false });
-	}
-	
-	enableScroll() {
-		window.removeEventListener('wheel', this.preventScroll);
-		window.removeEventListener('touchmove', this.preventScroll);
 	}
 }
