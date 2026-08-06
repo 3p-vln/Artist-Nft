@@ -1,7 +1,11 @@
 export class Dropdown {
 	constructor(dropdownContainer) {
+		this.dropdownContainer = dropdownContainer;
 		
-		this.dropdownContainer = document.querySelector(dropdownContainer);
+		if (typeof dropdownContainer === 'string') {
+			this.dropdownContainer = document.querySelector(dropdownContainer);
+		}
+		
 		if (!this.dropdownContainer) return;
 		
 		this.dropdownBtn = this.dropdownContainer.querySelector('.dropdown__btn');

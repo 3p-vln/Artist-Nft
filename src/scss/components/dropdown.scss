@@ -2,6 +2,36 @@
   position: relative;
   font-size: 13px;
 
+  &_form{
+    span{
+      font-size: 16px;
+    }
+
+    .dropdown{
+      &__btn{
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 19px 20px 34px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          padding: 8px 6px;
+        }
+      }
+
+      &__list{
+        z-index: 3;
+        margin: 35px 0;
+
+        &_active{
+          padding: 20px 19px 20px 34px;
+          height: 145px;
+        }
+      }
+    }
+  }
+
   &__btn{
     position: relative;
     z-index: 2;
@@ -37,11 +67,12 @@
     border-radius: 7px;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
     &_active{
       padding: 8px 12px;
       height: 75px;
+      box-shadow: 0 0 10px black;
     }
   }
 
