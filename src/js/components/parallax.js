@@ -1,6 +1,6 @@
-export class ContactParallax {
-	constructor() {
-		this.parallaxContainer = document.querySelector('.contact__bg.bg');
+export class Parallax {
+	constructor(parallaxContainer) {
+		this.parallaxContainer = document.querySelector(parallaxContainer);
 		
 		if (!this.parallaxContainer) return;
 		
@@ -52,8 +52,6 @@ export class ContactParallax {
 			
 			this.coordXprocent = coordX / parallaxWidth * 100;
 			this.coordYprocent = coordY / parallaxHeight * 100;
-			
-			console.log(this.coordXprocent, this.coordYprocent);
 		})
 	}
 }
