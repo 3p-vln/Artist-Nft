@@ -4,7 +4,7 @@ import {LoadCards} from "../components/load-cards";
 export class Pagination {
 	constructor() {
 		this.nfts = database.nfts;
-		this.nftsCount = 6;
+		this.nftsCount = 12;
 		
 		const pagesCount = Math.ceil(this.nfts.length / this.nftsCount);
 		const pageFromUrl = Number(new URLSearchParams(window.location.search).get('page'));

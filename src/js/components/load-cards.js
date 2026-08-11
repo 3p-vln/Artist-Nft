@@ -51,7 +51,7 @@ export class LoadCards {
 		
 		const nftInfoText = document.createElement('p');
 		nftInfoText.classList.add('info__text');
-		nftInfoText.textContent = card.info;
+		nftInfoText.textContent = card.infoShort;
 		
 		const nftPriceAndBtn = document.createElement('div');
 		nftPriceAndBtn.classList.add('nft-card__price');
@@ -83,6 +83,10 @@ export class LoadCards {
 		nftCard.appendChild(nftInfo);
 		nftCard.appendChild(nftPriceAndBtn);
 		
+		nftCard.addEventListener('click', (e) => {
+			window.location.href = `nft-product.html?id=${card.id}`;
+		})
+		
 		if(this.type === 'slide'){
 			nftCardContainer.classList.add('swiper-slide');
 		}
@@ -91,10 +95,4 @@ export class LoadCards {
 		
 		this.cardsContainer.appendChild(nftCardContainer);
 	}
-}
-
-export const testVariable = 'hello';
-
-export function testFunction() {
-	console.log('hello');
 }

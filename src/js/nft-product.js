@@ -1,9 +1,9 @@
 import {BurgerMenu} from "./components/burger-menu";
 import {Dropdown} from "./components/dropdown";
-import {Pagination} from "./nft/pagination";
+import {NftInfo} from "./nft-product/nftInfo";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
 	new Dropdown(".menu__dropdown");
-	new Pagination()
+	new NftInfo();
 })

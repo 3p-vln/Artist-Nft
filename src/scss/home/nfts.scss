@@ -38,6 +38,7 @@
 
     @include media-breakpoint-down(sm){
       max-width: 280px;
+      width: 100%;
     }
 
     &.swiper-slide-active {
