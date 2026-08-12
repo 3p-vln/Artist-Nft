@@ -5,10 +5,12 @@ import {FormDropdowns} from "./pricing/form-dropdowns";
 import {Parallax} from "./components/parallax";
 import {CustomValidate} from "./pricing/custom-validate";
 import {CustomColor} from "./pricing/custom-color";
+import {LoadCards} from "./pricing/load-cards";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
 	new Dropdown(".dropdown");
+	new LoadCards(".pictures-grid__content", 6, 2);
 	new GridHover('.pictures-grid__content');
 	new FormDropdowns();
 	new Parallax('.custom__bg.bg');
