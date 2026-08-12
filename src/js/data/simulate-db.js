@@ -11,7 +11,7 @@ export const database = {
 			price: '100 000',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'blue'
 		},
 		{
@@ -39,7 +39,7 @@ export const database = {
 			price: '120 322',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'green'
 		},
 		{
@@ -53,7 +53,7 @@ export const database = {
 			price: '120 000',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'blue'
 		},
 		{
@@ -67,7 +67,7 @@ export const database = {
 			price: '200 00',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'purple'
 		},
 		{
@@ -81,7 +81,7 @@ export const database = {
 			price: '100 322',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'green'
 		},
 		{
@@ -109,7 +109,7 @@ export const database = {
 			price: '100 322',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'purple'
 		},
 		{
@@ -123,7 +123,7 @@ export const database = {
 			price: '100 322',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'green'
 		},
 		{
@@ -137,7 +137,7 @@ export const database = {
 			price: '100 322',
 			owner: 'Perchen Arts',
 			createDate: '10/09/2021',
-			premium: true,
+			premium: false,
 			bgColor: 'blue'
 		},
 		{

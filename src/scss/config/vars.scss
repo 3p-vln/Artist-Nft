@@ -11,6 +11,7 @@ $md5: 576;
 $md6: 375;
 
 $background: #1D1F21;
+$backgroundOpacity: rgb(29 31 33 / 0.8);
 $whiteColor: #FCFFFF;
 $grayText: #C8D2DC;
 $hoverColor: #68C9FF;
@@ -39,8 +40,6 @@ $whiteRadio: #FFFFFF;
 $grayRadio: #CFCFCF;
 $brownRadio: #4A3221;
 $blackRadio: #000000;
-
-
 
 $blueToPurpleGradient: linear-gradient(45deg, #68C9FF 0%, #D1B5FF 99%);
 $blueToPurpleDarkGradient: linear-gradient(45deg, rgba(#68C9FF, 0.1) 0%, rgba(#D1B5FF, 0.1) 99%);
