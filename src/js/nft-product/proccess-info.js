@@ -21,5 +21,8 @@ export class ProccessInfo{
 		
 		const date = document.querySelector('.info__date');
 		date.innerText = data.createDate;
+		
+		const buy = document.querySelector('.info__btn');
+		buy.href = `pay.html?id=${data.id}`;
 	}
 }

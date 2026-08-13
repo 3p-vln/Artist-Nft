@@ -19,5 +19,14 @@
 
   &__main{
     font-size: clamp(26px, 5vw, 36px);
+
+    span{
+      width: fit-content;
+      background-image: $blueToPurpleGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

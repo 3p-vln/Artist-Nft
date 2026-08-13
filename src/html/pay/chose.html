@@ -1,0 +1,37 @@
+<div class="chose">
+  <div class="chose__content">
+    <div class="chose__title title">
+      <h3 class="title__subtitle">
+        PURCHASE
+      </h3>
+
+      <h2 class="title__main">
+        Payment for
+
+        <span>
+          Name of NFT or art
+        </span>
+      </h2>
+    </div>
+
+    <ul class="chose__list">
+      <li class="chose__item chose__item_active chose__credit" id="credit">
+        Credit card
+      </li>
+
+      <li class="chose__item chose__paypal" id="paypal">
+        PayPal
+      </li>
+
+      <li class="chose__item chose__crypto" id="crypto">
+        Crypto
+      </li>
+    </ul>
+
+    @@include('./credit.html', {'active': 'active'})
+
+    @@include('./paypal.html', {'active': 'no-active'})
+
+    @@include('./crypto.html', {'active': 'no-active'})
+  </div>
+</div>

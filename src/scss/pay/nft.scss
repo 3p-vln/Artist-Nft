@@ -1,0 +1,144 @@
+.nft-info{
+  padding: 25px 15px 25px 20px;
+  border-radius: 12px;
+  background: $lightBgColor;
+  max-width: 350px;
+  height: fit-content;
+  margin-top: 15px;
+
+  @include media-breakpoint-down(sm){
+    position: relative;
+    bottom: 7px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__name{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+  }
+
+  .price{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__coast{
+      font-size: 26px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      span{
+        font-size: 14px;
+        width: fit-content;
+        background-image: $blueToPurpleGradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1.6px;
+      }
+    }
+
+    &__bid{
+      font-size: 14px;
+      font-weight: 700;
+      color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 21px;
+      border-radius: 12px;
+      background: $greenBg;
+      height: fit-content;
+    }
+  }
+
+  .info{
+    position: relative;
+    margin-top: 29px;
+    padding-top: 16px;
+
+    &:before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $whiteColor;
+      opacity: 0.2;
+      top: 0;
+      left: 0;
+    }
+
+    &__title{
+      font-size: 14px;
+      font-weight: 700;
+      width: fit-content;
+      background-image: $blueToPurpleGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.6px;
+    }
+
+    .size{
+      font-size: 16px;
+      gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+
+      @include media-breakpoint-down(sm){
+        justify-content: flex-start;
+      }
+
+      &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 8px 0;
+        max-width: 125px;
+        width: 100%;
+        position: relative;
+
+        &:after{
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 1px;
+          background: $whiteColor;
+          opacity: 0.2;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &__item{
+        letter-spacing: 0.3px;
+      }
+
+      &__limited{
+        padding: 1px 0;
+        line-height: 1.8;
+      }
+    }
+
+    &__text{
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+      margin-top: 17px;
+      max-width: 305px;
+
+      @include media-breakpoint-down(sm){
+        max-width: 100%;
+      }
+    }
+  }
+}
