@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/pay.min.css?_v=20260813204706">
+  <title>pechen.arts - Payment</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a href="index.html" class="header__logo">
+        <img src="img/svg/logo-main.svg" alt="logo">
+      </a>
+      
+      <nav class="header__menu">
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="index.html">Main page</a>
+            </li>
+
+            <li class="menu__list-item nft nft_lock">
+              <a href="nft.html">
+                <img src="img/svg/lock.svg" alt="lock">
+
+                NFT
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="pictures.html">Pictures</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#">Auction</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#">Contacts</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="menu__btns">
+            <li class="menu__dropdown">
+              <div class="dropdown">
+                <button class="dropdown__btn">
+                  <input type="text" class="dropdown__input_hidden">
+
+                  <span class="dropdown__selected">
+                    ENG
+                  </span>
+
+                  <img src="img/svg/arrow.svg" alt="arrow">
+                </button>
+
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="eng">ENG</li>
+                  <li class="dropdown__list-item" data-value="ua">UA</li>
+                  <li class="dropdown__list-item" data-value="PL">PL</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu__auth">
+              <a class="btn btn_dark">
+                <span>Authorization</span>
+              </a>
+            </li>
+
+            <li class="menu__premium">
+              <a class="btn btn_light">Premium access</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__burger-menu burger-menu">
+        <a class="burger-menu__premium" href="#">
+          <img src="img/svg/crown-gradient.svg" alt="crown-gradient">
+        </a>
+
+        <div class="burger-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__content">
+        <div class="chose">
+  <div class="chose__content">
+    <div class="chose__title title">
+      <h3 class="title__subtitle">
+        PURCHASE
+      </h3>
+
+      <h2 class="title__main">
+        Payment for
+
+        <span>
+          Name of NFT or art
+        </span>
+      </h2>
+    </div>
+
+    <ul class="chose__list">
+      <li class="chose__item chose__item_active chose__credit" id="credit">
+        Credit card
+      </li>
+
+      <li class="chose__item chose__paypal" id="paypal">
+        PayPal
+      </li>
+
+      <li class="chose__item chose__crypto" id="crypto">
+        Crypto
+      </li>
+    </ul>
+
+    <div class="chose__payment credit chose__payment_active">
+  <form class="chose__form form" id="credit">
+    <div class="form__item">
+      <label class="form__label" for="credit-card">
+        Card number
+      </label>
+
+      <input class="form__input" id="credit-card" type="text" placeholder="0000 0000 0000 0000">
+    </div>
+
+    <div class="form__items">
+      <div class="form__item">
+        <label class="form__label" for="credit-date">
+          Date
+        </label>
+
+        <input class="form__input" id="credit-date" type="text" placeholder="01/01">
+      </div>
+
+      <div class="form__item">
+        <label class="form__label" for="credit-ccv">
+          CCV
+        </label>
+
+        <input class="form__input" id="credit-ccv" type="number" placeholder="000">
+      </div>
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="credit-name">
+        Name on card
+      </label>
+
+      <input class="form__input" id="credit-name" type="text" placeholder="Ivan Ivanov">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Purchase</button>
+
+    <div class="form__submit checkbox">
+      <label>
+        <input type="checkbox" class="checkbox__real" id="credit-check">
+        <span class="checkbox__custom"></span>
+        I agree with
+        <a href="#">Privacy Policy</a>
+        and
+        <a href="#">Terms of use</a>
+      </label>
+    </div>
+
+  </form>
+</div>
+
+    <div class="chose__payment paypal chose__payment_no-active">
+  <form class="chose__form form" id="paypal">
+    <div class="form__item">
+      <label class="form__label" for="paypal-card">
+        Card number
+      </label>
+
+      <input class="form__input" id="paypal-card" type="text" placeholder="0000 0000 0000 0000">
+    </div>
+
+    <div class="form__items">
+      <div class="form__item">
+        <label class="form__label" for="paypal-date">
+          Date
+        </label>
+
+        <input class="form__input" id="paypal-date" type="text" placeholder="01/01">
+      </div>
+
+      <div class="form__item">
+        <label class="form__label" for="paypal-ccv">
+          CCV
+        </label>
+
+        <input class="form__input" id="paypal-ccv" type="number" placeholder="000">
+      </div>
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="paypal-name">
+        Name on card
+      </label>
+
+      <input class="form__input" id="paypal-name" type="text" placeholder="Ivan Ivanov">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Purchase</button>
+
+    <div class="form__submit checkbox">
+      <label>
+        <input type="checkbox" class="checkbox__real" id="paypal-check">
+        <span class="checkbox__custom"></span>
+        I agree with
+        <a href="#">Privacy Policy</a>
+        and
+        <a href="#">Terms of use</a>
+      </label>
+    </div>
+
+  </form>
+</div>
+
+    <div class="chose__payment crypto chose__payment_no-active">
+  <form class="chose__form form" id="crypto">
+    <div class="form__item">
+      <label class="form__label">
+        To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail
+      </label>
+
+      <div class="form__input form__input_copy">
+        <p class="form__link">
+          EQBSSl0Xlo3...kkHTmFw5YVYOiWJ.
+        </p>
+
+        <img class="form__cope-link" src="img/svg/copy.svg" alt="copy">
+      </div>
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="mail">
+        E-mail
+      </label>
+
+      <input class="form__input" id="mail" type="text" placeholder="Your e-mail">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Check</button>
+
+    <div class="form__submit checkbox">
+      <label>
+        <input type="checkbox" class="checkbox__real" id="check">
+        <span class="checkbox__custom"></span>
+        I agree with
+        <a href="#">Privacy Policy</a>
+        and
+        <a href="#">Terms of use</a>
+      </label>
+    </div>
+
+  </form>
+</div>
+  </div>
+</div>
+
+        <div class="nft-info">
+  <h4 class="nft-info__name">
+  </h4>
+
+  <div class="nft-info__price price">
+    <div class="price__coast">
+    </div>
+
+    <p class="price__bid">
+      BID
+    </p>
+  </div>
+
+  <div class="nft-info__info info">
+    <p class="info__title">
+      DETAILED INFO
+    </p>
+
+    <div class="info__size size">
+      <ul class="size__list">
+        <li class="size__item size__in">
+          36 × 27 in
+        </li>
+        <li class="size__item size__cm">
+          91.4 × 68.6 cm
+        </li>
+      </ul>
+
+      <p class="size__limited">
+        This work is part of a limited edition set.
+      </p>
+    </div>
+
+    <p class="info__text">
+      Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.
+      <br><br>
+      If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective.
+    </p>
+  </div>
+</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <a href="#" class="footer__logo">
+        <img src="img/svg/logo-main.svg" alt="logo">
+      </a>
+      
+      <ul class="footer__menu menu">
+        <li class="menu__item"><a href="#">Privacy policy</a></li>
+        <li class="menu__item"><a href="#">Terms of use</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="" class="footer__inst">
+          <img src="img/svg/instagram.svg" alt="inst">
+        </a>
+
+        <a href="" class="footer__twitter">
+          <img src="img/svg/twitter.svg" alt="twitter">
+        </a>
+
+        <a href="" class="footer__tg">
+          <img src="img/svg/telegram.svg" alt="tg">
+        </a>
+
+        <a href="" class="footer__pinterest">
+          <img src="img/svg/pinterest.svg" alt="pinterest">
+        </a>
+      </div>
+
+      <div class="footer__all-rights">
+        All rights reserved © 2022
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="js/pay.min.js?_v=20260813204706"></script>
+</body>
+</html>
