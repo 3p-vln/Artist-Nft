@@ -6,11 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/svg/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/pay.min.css?_v=20260813204706">
+  <link rel="stylesheet" href="css/pay.min.css?_v=20260814191320">
   <title>pechen.arts - Payment</title>
 </head>
 <body>
 <div class="wrapper">
+  <div class="pay-pop-up">
+  <div class="container">
+    <div class="pay-pop-up__content">
+      <p class="pay-pop-up__success">
+        Thank you for your order!<br><br>
+        Your order has been successfully placed.<br>
+        We’ll notify you by email when it’s shipped.
+      </p>
+
+      <div class="pop-up">
+        <h3 class="pop-up__title">
+          Payment success. Now tell us where to bring
+        </h3>
+
+        <p class="pop-up__info">
+          Write correct country, adress, zip code
+        </p>
+
+        <form class="pop-up__form form" id="pop-up">
+          <div class="form__item">
+            <label for="country" class="form__label">
+              Country
+            </label>
+
+            <input type="text" class="form__input" id="country" placeholder="Your country">
+          </div>
+
+          <div class="form__item">
+            <label for="city" class="form__label">
+              City
+            </label>
+
+            <input type="text" class="form__input" id="city" placeholder="Your city">
+          </div>
+
+          <div class="form__item">
+            <label for="adress" class="form__label">
+              Adress
+            </label>
+
+            <input type="text" class="form__input" id="adress" placeholder="Your adress">
+          </div>
+
+          <div class="form__item">
+            <label for="zip" class="form__label">
+              Zip code
+            </label>
+
+            <input type="text" class="form__input" id="zip" placeholder="Your zip code">
+          </div>
+
+          <div class="form__item">
+            <label for="mail" class="form__label">
+              Mail
+            </label>
+
+            <input type="text" class="form__input" id="mail" placeholder="Your mail">
+          </div>
+
+          <button class="form__btn btn btn_light" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
   <header class="header">
   <div class="container">
     <div class="header__content">
@@ -364,6 +430,6 @@
 </footer>
 </div>
 
-<script src="js/pay.min.js?_v=20260813204706"></script>
+<script src="js/pay.min.js?_v=20260814191320"></script>
 </body>
 </html>
