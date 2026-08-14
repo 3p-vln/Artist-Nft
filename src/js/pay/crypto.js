@@ -1,4 +1,5 @@
 import JustValidate from "just-validate";
+import {PayPopUp} from "./pay-pop-up";
 
 export class Crypto {
 	constructor() {
@@ -48,6 +49,7 @@ export class Crypto {
 			.onSuccess((event) => {
 				event.preventDefault();
 				console.log('Form crypto is valid');
+				new PayPopUp();
 			});
 	}
 }

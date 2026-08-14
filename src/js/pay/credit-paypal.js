@@ -1,5 +1,6 @@
 import JustValidate from "just-validate";
 import IMask from "imask";
+import {PayPopUp} from "./pay-pop-up";
 
 export class CreditPaypal {
 	constructor(paymentForm) {
@@ -55,6 +56,7 @@ export class CreditPaypal {
 			.onSuccess((event) => {
 				event.preventDefault();
 				console.log('Form ' + paymentForm + ' is valid');
+				new PayPopUp()
 			});
 	}
 	

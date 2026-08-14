@@ -1,0 +1,133 @@
+.pay-pop-up {
+  opacity: 0;
+  visibility: hidden;
+  width: 100vw;
+  height: 100dvh;
+  background: $backgroundOpacity;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 120;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+  &_active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 100dvh;
+    padding: 30px 0;
+
+    @include media-breakpoint-down(sm){
+      align-items: flex-start;
+    }
+  }
+
+  &__success{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 0 5px $background;
+    text-align: center;
+    color: $green;
+    background: $greenBg;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 305px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+    &_active{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .pop-up{
+    max-width: 500px;
+    width: 100%;
+    background: $background;
+    border-radius: 12px;
+    padding: 45px 30px 45px 35px;
+    border: 1px solid $lightBgColor;
+
+    @include media-breakpoint-down(sm){
+      padding: 25px 10px 25px 15px;
+      box-shadow: none;
+    }
+
+    &__title{
+      font-size: clamp(26px, 5vw, 36px);
+      line-height: 1.4;
+      margin-bottom: 3px;
+    }
+
+    .form{
+      max-width: 405px;
+      margin-top: 35px;
+
+      .just-validate-error-label{
+        position: absolute;
+        font-size: 14px;
+        top: 30px;
+        left: 0;
+      }
+
+      &__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 13px;
+        width: 100%;
+
+        &:nth-child(5){
+          margin-bottom: 32px;
+        }
+
+        .just-validate-error-label{
+          left: auto;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &__label{
+        font-size: 14px;
+      }
+
+      &__input{
+        font-size: 16px;
+        padding: 21px 32px;
+        width: 100%;
+        border-radius: 9px;
+        background: $lightBgColor;
+
+        &_big{
+          height: 182px;
+          resize: none;
+        }
+      }
+
+      &__btn{
+        font-size: 18px;
+        width: 100%;
+        padding: 21px 23px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
