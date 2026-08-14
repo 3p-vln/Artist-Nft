@@ -65,7 +65,7 @@
     }
 
     &:has(.chose__paypal.chose__item_active)::before {
-      transform: translateX(calc(100% + -17px));
+      transform: translateX(calc(100% + 5px));
       width: 126px;
 
       @include media-breakpoint-down(sm){
