@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/svg/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/nft.min.css?_v=20260817155948">
-  <title>pechen.arts - Chosed item</title>
+  <link rel="stylesheet" href="css/auction.min.css?_v=20260817155948">
+  <title>pechen.arts - Auction item</title>
 </head>
 <body>
 <div class="wrapper">
@@ -104,66 +104,148 @@
 </header>
 
   <main class="main">
-    <div class="title">
+    <div class="breadcrumbs">
   <div class="container">
-    <div class="title__content">
-      <h2 class="title__main">
-        Unique. Bright. Non-fungible token
-      </h2>
+    <div class="breadcrumbs__content">
+      <a href="index.html" class="breadcrumbs__page">
+        Main page
+      </a>
 
-      <p class="title__info">
-        Indulgence announcing uncommonly met she continuing two unpleasing terminated
-      </p>
-
-      <div class="title__decor decor">
-        <div class="decor__star">
-          <img src="img/svg/star-bg.svg" alt="star-bg">
-        </div>
-
-        <div class="decor__ellipse">
-          <img src="img/svg/ellipse-bg.svg" alt="ellipse-bg">
-        </div>
+      <div class="breadcrumbs__arrow">
+        <img src="img/svg/arrow.svg" alt="arrow">
       </div>
+
+      <a href="" class="breadcrumbs__page breadcrumbs__page_current">
+        Auction
+      </a>
     </div>
-  </div>
-
-  <div class="title__bg bg">
-    <p class="bg__text bg__text_make">
-      MAKE ART
-    </p>
-
-    <p class="bg__text bg__text_not">
-      NOT WAR
-    </p>
   </div>
 </div>
 
-    <div class="nft-grid">
-  <div class="container">
-    <div class="nft-grid__content">
-      <div class="nft-grid__catalog">
-
+    <div class="nft-info">
+  <div class="nft-info__bg bg">
+    <div class="bg__blurs blur">
+      <div class="blur__left">
+        <picture><source srcset="img/auction/blur-left.webp" type="image/webp"><img src="img/auction/blur-left.png" alt="blur-left"></picture>
       </div>
 
-      <div class="nft-grid__pagination pagination">
-        <button class="pagination__prev">
-          <img src="img/svg/arrow.svg" alt="prev">
-        </button>
+      <div class="blur__right">
+        <picture><source srcset="img/auction/blur-right.webp" type="image/webp"><img src="img/auction/blur-right.png" alt="blur-right"></picture>
+      </div>
+    </div>
 
-        <ul class="pagination__list">
+    <div class="bg__decorate decorate">
+      <div class="decorate__star-top">
+        <img src="img/svg/star-bg.svg" alt="star">
+      </div>
 
-        </ul>
+      <div class="decorate__star-bottom">
+        <img src="img/svg/star-bg.svg" alt="star">
+      </div>
 
-        <button class="pagination__next">
-          <img src="img/svg/arrow.svg" alt="next">
-        </button>
+      <div class="decorate__ellipse">
+        <img src="img/svg/ellipse-bg.svg" alt="ellipse">
       </div>
     </div>
   </div>
 
-  <div class="nft-grid__bg bg">
-    <div class="bg__blur">
-      <picture><source srcset="img/pricing/blur.webp" type="image/webp"><img src="img/pricing/blur.png" alt="blur"></picture>
+  <div class="container">
+    <div class="nft-info__content">
+      <div class="nft-info__picture picture">
+        <div class="picture__ellipses-bg">
+          <img src="img/svg/ellipses-bg.svg" alt="ellipses-bg">
+        </div>
+
+        <div class="picture__img">
+          <picture><source srcset="../../img/components/cards/nft-img-1.webp" type="image/webp"><img src="../../img/components/cards/nft-img-1.png" alt="nft-img-1"></picture>
+        </div>
+      </div>
+
+      <div class="nft-info__info info">
+        <p class="info__type">
+          AUCTION
+        </p>
+
+        <h2 class="info__title">
+          Title of picture or NFT
+        </h2>
+
+        <div class="info__auction-info">
+          <ul class="info__size size">
+            <li class="size__item size__in">
+              36 × 27 in
+            </li>
+
+            <li class="size__item size__sm">
+              91.4 × 68.6 cm
+            </li>
+          </ul>
+
+          <p class="info__estimate estimate">
+            Estimated value
+
+            <span>$6,000</span>
+          </p>
+
+          <p class="info__part">
+            This work is part of a limited edition set.
+          </p>
+        </div>
+
+        <div class="info__bid bid">
+          <p class="bid__higest">
+            <span class="bid__higest-text">
+              highest price
+            </span>
+
+            <span class="bid__higest-price">
+              $100 322
+            </span>
+          </p>
+
+          <form class="bid__form form">
+            <div class="form__item">
+              <label for="bid" class="form__label">
+                Place your bid
+              </label>
+
+              <input type="number" id="bid" class="form__input" placeholder="$100 322">
+            </div>
+
+            <button class="form__btn btn btn_light" type="submit">
+              Place bid
+            </button>
+          </form>
+
+          <div class="bid__timer timer">
+            <div class="timer__countdown countdown">
+              <p class="countdown__day">
+                28d
+              </p>
+
+              <p class="countdown__hours">
+                17h
+              </p>
+
+              <p class="countdown__minutes">
+                26m
+              </p>
+
+              <p class="countdown__seconds">
+                31s
+              </p>
+            </div>
+
+            <p class="timer__final-date">
+              Live сентябрь 8, 8:00am
+            </p>
+          </div>
+
+          <p class="bid__info">
+            You can purchase Art or NFT using popular system of payment. We accepting PayPal, Visa/Mastercard. Any crypto currency
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -207,6 +289,6 @@
 </footer>
 </div>
 
-<script src="js/nft.min.js?_v=20260817155948"></script>
+<script src="js/auction.min.js?_v=20260817155948"></script>
 </body>
 </html>
