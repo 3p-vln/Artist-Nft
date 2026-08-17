@@ -1,6 +1,6 @@
 import {BurgerMenu} from "./components/burger-menu";
 import {Dropdown} from "./components/dropdown";
-import {NftInfo} from "./nft-product/nftInfo";
+import {NftInfo} from "./nft-product/nft-info";
 import {Parallax} from "./components/parallax";
 import {ContactValidate} from "./components/contact-validate";
 import {ProccessInfo} from "./nft-product/proccess-info";

@@ -29,6 +29,6 @@ export class NftInfo {
 		text.innerHTML = data.info;
 		
 		const price = this.nftInfoContainer.querySelector('.info__price');
-		price.textContent = '$' + data.price;
+		price.textContent = '$' + data.price.toLocaleString('ru-RU');
 	}
 }

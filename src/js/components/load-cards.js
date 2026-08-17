@@ -59,7 +59,7 @@ export class LoadCards {
 		
 		const nftPrice = document.createElement('p');
 		nftPrice.classList.add('price__coast');
-		nftPrice.textContent = '$' + card.price;
+		nftPrice.textContent = '$' + card.price.toLocaleString('ru-RU');
 		
 		const nftBtn = document.createElement('a');
 		nftBtn.classList.add('price__btn');
@@ -67,7 +67,10 @@ export class LoadCards {
 		nftBtn.classList.add('btn_light');
 		
 		nftBtn.textContent = 'Buy now';
-		nftBtn.href = `nft-product.html?id=${card.id}`;
+		
+		if (card.type !== 'AUCTION') nftBtn.href = `nft-product.html?id=${card.id}`
+		else nftBtn.href = `auction.html?id=${card.id}`
+		
 		
 		nftPriceAndBtn.appendChild(nftPrice);
 		nftPriceAndBtn.appendChild(nftBtn);
@@ -84,7 +87,8 @@ export class LoadCards {
 		nftCard.appendChild(nftPriceAndBtn);
 		
 		nftCard.addEventListener('click', (e) => {
-			window.location.href = `nft-product.html?id=${card.id}`;
+			if (card.type !== 'AUCTION') window.location.href = `nft-product.html?id=${card.id}`
+			else window.location.href = `auction.html?id=${card.id}`
 		})
 		
 		if(this.type === 'slide'){
