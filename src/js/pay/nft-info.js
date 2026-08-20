@@ -21,7 +21,7 @@ export class NftInfo{
         PRICE
       </span>
 
-      $${data.price}
+      $${data.price.toLocaleString('ru-RU')}
 		`;
 		
 		const info = document.querySelector('.info__text');

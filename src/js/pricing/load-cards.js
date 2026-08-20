@@ -60,6 +60,7 @@ export class LoadCards{
 			
 			const btn = document.createElement("a");
 			btn.classList.add("item__unlock", "btn", "btn_black");
+			btn.href = 'premium.html';
 			btn.innerHTML = `
 			<span>Unlock</span>
 			
@@ -85,13 +86,14 @@ export class LoadCards{
 			
 			const price = document.createElement("p");
 			price.classList.add("item__price");
-			price.innerText = '$' + cards.price;
+			price.innerText = '$' + cards.price.toLocaleString('ru-RU');
 			
 			const hoverBtns = document.createElement("div");
 			hoverBtns.classList.add("item__btns");
 			
 			const btnBuy = document.createElement("a");
 			btnBuy.classList.add("item__buy", "btn", "btn_black");
+			btnBuy.href = `pay.html?id=${cards.id}`;
 			btnBuy.innerHTML = `
 			<span>
 				Buy
@@ -100,6 +102,7 @@ export class LoadCards{
 			
 			const btnView = document.createElement("a");
 			btnView.classList.add("item__viev", "btn", "btn_black");
+			btnView.href = `nft-product.html?id=${cards.id}`;
 			btnView.innerHTML = `
 			<span>
 				View
