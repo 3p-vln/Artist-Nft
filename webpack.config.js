@@ -19,6 +19,7 @@ export const webpackConfig = (isMode) => {
 			'nft-product': path.join(paths.src, 'js/nft-product.js'),
 			auction: path.join(paths.src, 'js/auction.js'),
 			pay: path.join(paths.src, 'js/pay.js'),
+			premium: path.join(paths.src, 'js/premium.js'),
 		},
 		
 		mode: isMode ? 'development' : 'production',

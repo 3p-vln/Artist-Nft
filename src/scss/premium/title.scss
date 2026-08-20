@@ -1,0 +1,133 @@
+.title {
+  position: relative;
+  margin-top: 64px;
+  padding-top: 50px;
+
+  @include media-breakpoint-down(sm){
+    padding-top: 15px;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 735px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(sm){
+      align-items: flex-start;
+    }
+  }
+
+  &__main {
+    font-size: clamp(36px, 7vw, 64px);
+    margin-bottom: 16px;
+    margin-top: 12px;
+    max-width: 490px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm){
+      margin-bottom: 16px;
+      text-align: left;
+      line-height: 1.1;
+      margin-top: 22px;
+      max-width: 100%;
+      padding-right: 75px;
+    }
+  }
+
+  &__info{
+    font-size: clamp(15px, 2vw, 16px);
+    max-width: 400px;
+    line-height: 1.9;
+    letter-spacing: 0.1px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm){
+      line-height: 1.6;
+      text-align: left;
+      padding-right: 50px;
+    }
+  }
+
+  .decor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &__star{
+      position: absolute;
+      width: 44px;
+      height: 60px;
+      top: 0;
+      left: 38px;
+
+      @include media-breakpoint-down(sm){
+        width: 46px;
+        height: 62px;
+        top: 0;
+        left: 91%;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__ellipse{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      bottom: 22%;
+      right: 0;
+
+      @include media-breakpoint-down(sm){
+        bottom: 0;
+        right: 5.5%;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .bg{
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+
+    &__text{
+      position: absolute;
+      font-size: clamp(50px, 6vw, 80px);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 0.5px $whiteColor;
+      text-transform: uppercase;
+      opacity: 0.2;
+
+      &_make{
+        bottom: 35%;
+        left: -2.6%;;
+      }
+
+      &_not{
+        bottom: 35%;
+        right: -1.8%;
+      }
+    }
+  }
+}

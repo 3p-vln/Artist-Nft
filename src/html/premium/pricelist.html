@@ -1,0 +1,41 @@
+<div class="pricelist">
+  <div class="container">
+    <div class="pricelist__content">
+      <ul class="pricelist__chose-item chose">
+        <li class="chose__item chose__item_active chose__week" id="week">
+          One week
+        </li>
+
+        <li class="chose__item chose__month" id="month">
+          Month
+        </li>
+
+        <li class="chose__item chose__year" id="year">
+          Year
+        </li>
+      </ul>
+
+      <div class="pricelist__list swiper">
+        <div class="swiper-wrapper">
+          @@include('../premium/premium-card.html', {
+          'item': 'week',
+          'active': 'no-active',
+          'bg-text': '1 week'
+          })
+
+          @@include('../premium/premium-card.html', {
+          'item': 'year',
+          'active': 'active',
+          'bg-text': 'year'
+          })
+
+          @@include('../premium/premium-card.html', {
+          'item': 'month',
+          'active': 'no-active',
+          'bg-text': 'month'
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
