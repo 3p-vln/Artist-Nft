@@ -1,6 +1,6 @@
 import {BurgerMenu} from "./components/burger-menu";
 import {Dropdown} from "./components/dropdown";
-import {Pricelist} from "./premium/pricelist-swiper";
+import {Pricelist} from "./premium/pricelist";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
