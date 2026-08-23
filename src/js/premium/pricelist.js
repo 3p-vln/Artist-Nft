@@ -18,6 +18,7 @@ export class Pricelist {
 		if (window.innerWidth >= 768) {
 			this.cards.forEach(card => {
 				card.addEventListener("click", this.handleCardClick);
+				card.style.display = "block";
 			});
 		} else {
 			this.cards.forEach(card => {
@@ -71,7 +72,9 @@ export class Pricelist {
 	
 	chosePremium(){
 		const activeChose = document.querySelector(".chose__item_active").id;
-		document.querySelector(`.${activeChose}`).classList.add("premium-card_chosed");
+		const activeCard = document.querySelector(`.${activeChose}`);
+		activeCard.classList.add("premium-card_chosed");
+		activeCard.style.display="block";
 		
 		this.choseItems.forEach(item => {
 			item.addEventListener("click", () => {
@@ -98,8 +101,12 @@ export class Pricelist {
 	changeCard(active){
 		this.cards.forEach((card) => {
 			card.classList.remove("premium-card_chosed");
+			card.style.display = "none";
 			
-			if (card.classList.contains(active)) card.classList.add("premium-card_chosed");
+			if (card.classList.contains(active)) {
+				card.classList.add("premium-card_chosed");
+				card.style.display = "block";
+			}
 		})
 	}
 }
