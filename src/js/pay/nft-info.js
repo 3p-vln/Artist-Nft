@@ -1,9 +1,8 @@
 import {database} from "../data/simulate-db";
 
 export class NftInfo{
-	constructor(){
-		this.idFromUrl = new URLSearchParams(window.location.search).get('id');
-		this.nftData = database.nfts.find(item => item.id === this.idFromUrl);
+	constructor(idFromUrl){
+		this.nftData = database.nfts.find(item => item.id === idFromUrl);
 		
 		this.loadInfo(this.nftData)
 	}

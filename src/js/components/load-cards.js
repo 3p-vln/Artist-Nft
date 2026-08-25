@@ -20,7 +20,12 @@ export class LoadCards {
 		
 		const typeCard = document.createElement('p');
 		typeCard.classList.add('nft-card__title');
-		typeCard.textContent = card.type;
+		if (card.type !== 'AUCTION') {
+			typeCard.textContent = card.premium ? `${card.type} PREMIUM` : card.type;
+		} else {
+			typeCard.textContent = card.type;
+		}
+		
 		
 		const nftPicture = document.createElement('div');
 		nftPicture.classList.add('nft-card__picture');

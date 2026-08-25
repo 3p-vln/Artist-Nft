@@ -3,7 +3,7 @@ import {Dropdown} from "./components/dropdown";
 import {Chose} from "./pay/chose";
 import {CreditPaypal} from "./pay/credit-paypal";
 import {Crypto} from "./pay/crypto";
-import {NftInfo} from "./pay/nft-info";
+import {InfoBuy} from "./pay/info-buy";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new BurgerMenu();
@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	new CreditPaypal('paypal');
 	new Crypto();
 	
-	new NftInfo();
+	new InfoBuy()
 })
