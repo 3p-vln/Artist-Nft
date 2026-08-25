@@ -20,6 +20,7 @@ export const webpackConfig = (isMode) => {
 			auction: path.join(paths.src, 'js/auction.js'),
 			pay: path.join(paths.src, 'js/pay.js'),
 			premium: path.join(paths.src, 'js/premium.js'),
+			contact: path.join(paths.src, 'js/contact.js'),
 		},
 		
 		mode: isMode ? 'development' : 'production',

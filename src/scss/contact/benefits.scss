@@ -1,0 +1,96 @@
+.benefits{
+  margin-top: 105px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 21px;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(sm){
+      align-items: flex-start;
+      padding-right: 70px;
+    }
+
+    &__subtitle {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__main{
+      @include media-breakpoint-down(sm){
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1110px;
+    margin: 37px auto 0;
+    gap: 30px;
+
+    @include media-breakpoint-down(md){
+      gap: 17px 10px;
+    }
+
+    @include media-breakpoint-down(sm){
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 27px;
+    }
+
+    &__item{
+      background-color: $lightBgColor;
+      border-radius: 12px;
+      padding: 20px 20px 35px;
+
+      @include media-breakpoint-down(sm){
+        padding: 10px;
+      }
+    }
+
+    &__marker{
+      background: $blueToPurpleDarkGradient;
+      padding: 12px;
+      border-radius: 12px;
+      width: fit-content;
+
+      @include media-breakpoint-down(sm){
+        width: 37px;
+        height: 37px;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__title{
+      font-size: clamp(14px, 2vw, 20px);
+      font-weight: 600;
+      margin-top: 14px;
+      letter-spacing: 0.1px;
+
+      @include media-breakpoint-down(sm){
+        margin-top: 9px;
+      }
+    }
+
+    &__info{
+      font-size: clamp(12px, 1.5vw, 16px);
+      line-height: 1.7;
+      margin-top: 12px;
+      letter-spacing: 0.1px;
+
+      @include media-breakpoint-down(sm){
+        margin-top: 4px;
+      }
+    }
+  }
+}
