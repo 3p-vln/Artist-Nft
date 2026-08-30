@@ -1,0 +1,58 @@
+<div class="chose__auth signup chose__auth_@@active">
+  <form class="chose__form form" id="signup-form">
+    <div class="form__item">
+      <label class="form__label" for="role">
+        Select your role
+      </label>
+
+      <input type="text" class="form__input_hidden" id="role">
+
+      <div class="form__list">
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="customer">
+          <span class="radio__custom"></span>
+
+          Customer
+        </label>
+
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="admin">
+          <span class="radio__custom"></span>
+
+          Admin
+        </label>
+
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="artist">
+          <span class="radio__custom"></span>
+
+          Artist
+        </label>
+      </div>
+
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="signup-email">
+        E-mail
+      </label>
+
+      <input class="form__input" id="signup-email" autocomplete="username" type="text" placeholder="Your e-mail">
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="signup-password">
+        Password
+      </label>
+
+      <input class="form__input" id="signup-password" type="password"  autocomplete="new-password" placeholder="Your password">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Send message</button>
+
+    <p class="form__info">
+      Already have accoun?
+      <span>Log in</span>
+    </p>
+  </form>
+</div>

@@ -61,8 +61,6 @@ export class NftInfoAuction extends NftInfo {
 			}
 		});
 		
-		console.log(document)
-		
 		validate
 			.addField('#bid', [
 				{

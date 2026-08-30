@@ -1,13 +1,13 @@
 export class Chose {
 	constructor(){
-		this.payItems = document.querySelectorAll('.chose__item');
+		this.authItems = document.querySelectorAll('.chose__item');
 		this.formItems = document.querySelectorAll('.chose__payment');
 		
 		this.changeItem()
 	}
 	
 	changeItem(){
-		this.payItems.forEach((item) => {
+		this.authItems.forEach((item) => {
 			item.addEventListener('click', () => {
 				document.querySelector('.chose__item_active').classList.remove('chose__item_active');
 				item.classList.add('chose__item_active');

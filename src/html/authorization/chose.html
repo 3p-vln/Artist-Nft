@@ -1,0 +1,29 @@
+<div class="chose">
+  <div class="container">
+    <div class="chose__content">
+      <div class="chose__title title">
+        <a href="index.html" class="title__logo">
+          <img src="@img/svg/logo-main.svg" alt="logo">
+        </a>
+
+        <h1 class="title__main">
+          Authorization
+        </h1>
+      </div>
+
+      <ul class="chose__list">
+        <li class="chose__item chose__item_active chose__login" id="login">
+          Log in
+        </li>
+
+        <li class="chose__item chose__signup" id="signup">
+          Sign up
+        </li>
+      </ul>
+
+      @@include('./log-in.html', {'active': 'active'})
+
+      @@include('./sign-up.html', {'active': 'no-active'})
+    </div>
+  </div>
+</div>

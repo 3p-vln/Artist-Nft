@@ -21,6 +21,7 @@ export const webpackConfig = (isMode) => {
 			pay: path.join(paths.src, 'js/pay.js'),
 			premium: path.join(paths.src, 'js/premium.js'),
 			contact: path.join(paths.src, 'js/contact.js'),
+			authorization: path.join(paths.src, 'js/authorization.js'),
 		},
 		
 		mode: isMode ? 'development' : 'production',

@@ -1,0 +1,130 @@
+.chose{
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17%;
+
+    @include media-breakpoint-down(sm){
+      margin-top: 5%;
+    }
+  }
+
+  .title{
+    &__logo{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 144px;
+      opacity: 0.7;
+      margin-bottom: 15px;
+
+      @include media-breakpoint-down(sm){
+        margin-bottom: 53px;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    max-width: 275px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    background: $lightBgColor;
+    border-radius: 12px;
+    padding: 10px;
+    height: 70px;
+    gap: 5px;
+
+    @include media-breakpoint-down(sm){
+      max-width: 100%;
+      height: 50px;
+      padding: 3.5px 8px;
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 8px;
+      left: 8px;
+      width: calc(100% - (100% / 2) * 1.05);
+      height: calc(100% - 15px);
+      border-radius: 12px;
+      background: $blueToPurpleGradient;
+      transition: transform 0.35s ease-in-out, width 0.35s ease-in-out;
+
+      @include media-breakpoint-down(sm){
+        top: 3.5px;
+        height: calc(100% - 8px);
+      }
+    }
+
+    &:has(.chose__signup.chose__item_active)::before {
+      transform: translateX(100%);
+
+      @include media-breakpoint-down(sm){
+        transform: translateX(calc(100% + (120 - 100) * ((100vw - 345px) / (768 - 345))));
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: clamp(14px, 2vw, 16px);
+    height: 100%;
+    max-width: 131px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition:
+            color 0.25s ease,
+            font-size 0.25s ease;
+
+    @include media-breakpoint-down(sm){
+      max-width: 100%;
+    }
+
+    &_active {
+      font-size: clamp(14px, 2vw, 18px);
+      font-weight: 700;
+      color: $background;
+    }
+  }
+
+  &__auth{
+    max-width: 0;
+    height: 0;
+    transition: max-width 0.5s ease-in-out;
+
+    &_no-active{
+      max-width: 0;
+      height: 0;
+    }
+
+    &_active{
+      max-width: 410px;
+      height: 450px;
+      opacity: 1;
+
+      @include media-breakpoint-down(sm){
+        max-width: calc(100vw - 30px);
+      }
+    }
+  }
+}

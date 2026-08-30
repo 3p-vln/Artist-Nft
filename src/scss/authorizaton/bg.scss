@@ -1,0 +1,64 @@
+.bg{
+  position: absolute;
+  max-width: 1440px;
+  height: 900px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media-breakpoint-down(sm){
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .blur{
+    &__left{
+      position: absolute;
+      bottom: -15%;
+      right: 50%;
+
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+
+    &__right{
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+
+      @include media-breakpoint-down(sm){
+        bottom: 55%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .decorate{
+    position: absolute;
+    height: 170px;
+    width: 48.5%;
+    left: 50%;
+    top: 40.5%;
+    transform: translate(-50%, -50%);
+
+    @include media-breakpoint-down(sm){
+      height: 63px;
+      top: 10.2%;
+      width: 80%;
+    }
+
+    &__star{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &__ellipse{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

@@ -24,8 +24,6 @@ export class Pagination {
 		
 		this.paginationItems = document.querySelectorAll('.pagination__item');
 		
-		console.log(this.paginationItems)
-		
 		this.updatePagination();
 		this.prevNextBtns()
 	}
