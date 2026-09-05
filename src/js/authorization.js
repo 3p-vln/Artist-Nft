@@ -1,11 +1,11 @@
 import {Chose} from "./authorization/chose";
-import {LogInValidate} from "./authorization/log-in-validate";
-import {SignUpValidate} from "./authorization/sign-up-validate";
+import {LogIn} from "./authorization/log-in";
+import {SignUp} from "./authorization/sign-up";
 import {SetRole} from "./authorization/set-role";
 
 document.addEventListener('DOMContentLoaded', () => {
 	new Chose();
 	new SetRole();
-	new LogInValidate();
-	new SignUpValidate();
+	new LogIn();
+	new SignUp();
 })

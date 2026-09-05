@@ -3,9 +3,20 @@
 
   .form{
     width: 410px;
+    position: relative;
 
     @include media-breakpoint-down(sm){
       width: calc(100vw - 30px);
+    }
+
+    &__error{
+      color: $redRadio;
+      position: absolute;
+      font-size: 16px;
+      font-weight: 700;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .just-validate-error-label{
