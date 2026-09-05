@@ -30,5 +30,16 @@ export class NftInfo {
 		
 		const price = this.nftInfoContainer.querySelector('.info__price');
 		price.textContent = '$' + data.price.toLocaleString('ru-RU');
+		
+		const buy = document.querySelector('.info__btn');
+		const currenUser = JSON.parse(localStorage.getItem("currentUser"));
+		
+		if (!currenUser){
+			buy.href = 'authorization.html?form=login';
+		} else if(currenUser && !currenUser.premium && data.premium){
+			buy.href = 'premium.html';
+		} else {
+			buy.href = `pay.html?id=${data.id}`;
+		}
 	}
 }

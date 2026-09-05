@@ -38,8 +38,9 @@ export class LoadCards{
 		
 		let lockCard;
 		let hoverCard;
+		const currentUserPremium = JSON.parse(localStorage.getItem("currentUser")) ? JSON.parse(localStorage.getItem("currentUser")).premium : false;
 		
-		if(cards.premium){
+		if(!currentUserPremium && cards.premium){
 			lockCard = document.createElement("div");
 			lockCard.classList.add("item__lock", "lock");
 			
