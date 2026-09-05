@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/authorization.min.css?_v=20260905155701">
+  <title>Authorization</title>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="bg">
+  <div class="bg__blur blur">
+    <div class="blur__left">
+      <picture><source srcset="img/authorization/blur.webp" type="image/webp"><img src="img/authorization/blur.png" alt="blur"></picture>
+    </div>
+
+    <div class="blur__right">
+      <picture><source srcset="img/authorization/blur.webp" type="image/webp"><img src="img/authorization/blur.png" alt="blur"></picture>
+    </div>
+  </div>
+
+  <div class="bg__decorate decorate">
+    <div class="decorate__star">
+      <img src="img/svg/star-bg.svg" alt="star">
+    </div>
+
+    <div class="decorate__ellipse">
+      <img src="img/svg/ellipse-bg.svg" alt="ellipse">
+    </div>
+  </div>
+</div>
+
+  <main class="main">
+    <div class="chose">
+  <div class="container">
+    <div class="chose__content">
+      <div class="chose__title title">
+        <a href="index.html" class="title__logo">
+          <img src="img/svg/logo-main.svg" alt="logo">
+        </a>
+
+        <h1 class="title__main">
+          Authorization
+        </h1>
+      </div>
+
+      <ul class="chose__list">
+        <li class="chose__item chose__item_active chose__login" id="login">
+          Log in
+        </li>
+
+        <li class="chose__item chose__signup" id="signup">
+          Sign up
+        </li>
+      </ul>
+
+      <div class="chose__auth login chose__auth_active">
+  <form class="chose__form form" id="login-form">
+    <div class="form__item">
+      <label class="form__label" for="login-email">
+        E-mail
+      </label>
+
+      <input class="form__input" id="login-email" autocomplete="username" type="text" placeholder="Your e-mail">
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="login-password">
+        Password
+      </label>
+
+      <input class="form__input" id="login-password" type="password" autocomplete="current-password" placeholder="Your password">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Send message</button>
+
+    <p class="form__info">
+      Don’t have account yet?
+      <span>Sign up</span>
+    </p>
+
+    <p class="form__error"></p>
+  </form>
+</div>
+
+      <div class="chose__auth signup chose__auth_no-active">
+  <form class="chose__form form" id="signup-form">
+    <div class="form__item">
+      <label class="form__label" for="role">
+        Select your role
+      </label>
+
+      <input type="text" class="form__input_hidden" id="role">
+
+      <div class="form__list">
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="customer">
+          <span class="radio__custom"></span>
+
+          Customer
+        </label>
+
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="admin">
+          <span class="radio__custom"></span>
+
+          Admin
+        </label>
+
+        <label class="form__radio radio">
+          <input type="radio" class="radio__real" name="role" value="artist">
+          <span class="radio__custom"></span>
+
+          Artist
+        </label>
+      </div>
+
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="signup-email">
+        E-mail
+      </label>
+
+      <input class="form__input" id="signup-email" autocomplete="username" type="text" placeholder="Your e-mail">
+    </div>
+
+    <div class="form__item">
+      <label class="form__label" for="signup-password">
+        Password
+      </label>
+
+      <input class="form__input" id="signup-password" type="password"  autocomplete="new-password" placeholder="Your password">
+    </div>
+
+    <button class="form__btn btn btn_light" type="submit">Send message</button>
+
+    <p class="form__info">
+      Already have accoun?
+      <span>Log in</span>
+    </p>
+
+    <p class="form__error"></p>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+  </main>
+
+</div>
+
+<script src="js/authorization.min.js?_v=20260905155701"></script>
+</body>
+</html>
