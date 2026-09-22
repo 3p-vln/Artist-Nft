@@ -1,11 +1,10 @@
-export class BurgerMenu{
+export class BurgerMenuCabinet {
 	constructor(){
 		this.menu = document.querySelector('.menu');
 		this.burgerBtn = document.querySelector('.burger-menu__btn');
 		
 		this.toggle();
 		this.resizeWindow();
-		this.authChange();
 	}
 	
 	toggle(){
@@ -45,29 +44,6 @@ export class BurgerMenu{
 			document.body.style.overflow = 'hidden';
 		} else {
 			document.body.style.overflow = '';
-		}
-	}
-	
-	authChange(){
-		const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-		
-		if(!currentUser) return;
-
-		const authBtn = document.querySelector('.menu__auth .btn');
-		authBtn.innerHTML = `
-			<span>Cabinet</span>
-		`;
-		
-		switch(currentUser.role){
-			case 'admin':
-				authBtn.href = 'cabinet-admin.html';
-				break;
-			case 'artist':
-				authBtn.href = 'cabinet-worker.html';
-				break;
-			case 'customer':
-				authBtn.href = 'cabinet-client.html';
-				break;
 		}
 	}
 }

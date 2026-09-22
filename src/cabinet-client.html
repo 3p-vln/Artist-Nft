@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/components/head.html', {
+  'title': 'Cabinet',
+  'srcStyle': 'cabinet-client'
+})
+
+<body>
+<div class="wrapper">
+  <div class="container">
+    <div class="wrapper__content">
+      @@include('html/cabinet/header.html', {
+      'messagesActive': 'active',
+      'ordersActive': 'active',
+      'nftOrdersActive': 'no-active',
+      'workersActive': 'no-active',
+      'statisticsActive': 'no-active',
+      })
+
+      <main class="main">
+        @@include('html/cabinet/orders.html')
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="js/cabinet-client.min.js"></script>
+</body>
+</html>

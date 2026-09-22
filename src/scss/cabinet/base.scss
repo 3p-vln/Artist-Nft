@@ -1,0 +1,87 @@
+@import "./../config/vars";
+@import "./../config/reset";
+@import "./../config/fonts";
+@import "./../config/mixins";
+@import "./../components/btn";
+
+html, body {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $background;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100dvh;
+  overflow: auto;
+
+  &__content{
+    width: 100%;
+    position: relative;
+  }
+}
+
+.main {
+  max-width: calc(780px + (1035 - 780) * ((100vw - 1024px) / (1280 - 1024)));
+  position: absolute;
+  margin-top: 64px;
+  right: -25px;
+  height: calc(100vh - 64px);
+  overflow: auto;
+  background: $lightBgColor;
+  border-radius: 32px 0 0 0;
+  padding: 29px 30px 0 15px;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $moreLightBgColor;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $lightGray;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1035px;
+  }
+
+  @include media-breakpoint-down(md){
+    background: transparent;
+    position: unset;
+    max-width: 100%;
+    border-radius: 0;
+    overflow: unset;
+    padding: 0;
+    height: fit-content;
+  }
+}
+
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @include media-breakpoint-down(sm){
+    padding: 0 15px;
+  }
+}
+
+@import "./../components/header";

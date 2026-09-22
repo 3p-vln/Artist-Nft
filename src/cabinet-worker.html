@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/components/head.html', {
+  'title': 'Cabinet',
+  'srcStyle': 'cabinet-worker'
+})
+
+<body>
+<div class="wrapper">
+  @@include('html/cabinet/header.html', {
+    'messagesActive': 'active',
+    'ordersActive': 'no-active',
+    'nftOrdersActive': 'no-active',
+    'workersActive': 'no-active',
+    'statisticsActive': 'active',
+  })
+
+  <main class="main">
+
+  </main>
+
+</div>
+
+<script src="js/cabinet-worker.min.js"></script>
+</body>
+</html>

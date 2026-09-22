@@ -1,0 +1,407 @@
+.orders{
+  width: 100%;
+
+  &__title{
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 86px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(md){
+      display: block;
+    }
+  }
+
+  .table{
+    @include media-breakpoint-down(md){
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    &__head{
+      font-size: 14px;
+      padding: 0 35px 0 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down(md){
+        display: none;
+      }
+    }
+
+    &__type{
+      max-width: 80px;
+      width: 100%;
+    }
+
+    &__color{
+      max-width: 45px;
+      width: 100%;
+    }
+
+    &__mail{
+      max-width: 185px;
+      width: 100%;
+    }
+
+    &__size{
+      max-width: 105px;
+      width: 100%;
+    }
+
+    &__comment,
+    &__address{
+      max-width: 130px;
+      width: 100%;
+    }
+
+    &__action{
+      max-width: 120px;
+      width: 100%;
+    }
+  }
+
+  .order{
+    display: flex;
+    background: $background;
+    border-radius: 14px;
+    padding: 25px 28px 25px 24px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @include media-breakpoint-down(md){
+      flex-direction: column;
+      background: $moreLightBgColor;
+      align-items: flex-start;
+      padding: 20px;
+      margin-bottom: 0;
+      gap: 10px;
+    }
+
+    &__main-info,
+    &__sub-info{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__main-info{
+      @include media-breakpoint-down(md){
+        display: grid;
+        grid-template-columns: 40px auto;
+        gap: 7px 4px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__sub-info{
+      @include media-breakpoint-down(md){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5px;
+        gap: 25px;
+      }
+    }
+
+    &__type{
+      font-size: 16px;
+      font-weight: 600;
+      max-width: 58px;
+      width: 100%;
+      letter-spacing: -0.2px;
+      margin-right: calc(0px + (18 - 0) * ((100vw - 1024px) / (1280 - 1024)));
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (min-width: 1280px) {
+        margin-right: 18px;
+      }
+
+      @include media-breakpoint-down(md){
+        max-width: fit-content;
+        margin-right: 0;
+      }
+    }
+
+    &__color{
+      margin-right: calc(0px + (26 - 0) * ((100vw - 1024px) / (1280 - 1024)));
+
+      @media (min-width: 1280px) {
+        margin-right: 26px;
+      }
+
+      @include media-breakpoint-down(md){
+        margin-right: 0;
+        grid-column: 1/2;
+        grid-row: 1/3;
+      }
+
+      span{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 4px solid $lightBgColor;
+        display: flex;
+
+        @include media-breakpoint-down(md){
+          border: none;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      &_red{
+        span{
+          background: $redRadio;
+        }
+      }
+
+      &_orange{
+        span{
+          background: $orangeRadio;
+        }
+      }
+
+      &_yellow{
+        span{
+          background: $yellowRadio;
+        }
+      }
+
+      &_green{
+        span{
+          background: $greenRadio;
+        }
+      }
+
+      &_mint{
+        span{
+          background: $mintRadio;
+        }
+      }
+
+      &_light-blue{
+        span{
+          background: $lightBlueRadio;
+        }
+      }
+
+      &_blue{
+        span{
+          background: $blueRadio;
+        }
+      }
+
+      &_purple{
+        span{
+          background: $purpleRadio;
+        }
+      }
+
+      &_light-purple{
+        span{
+          background: $lightPurpleRadio;
+        }
+      }
+
+      &_pink{
+        span{
+          background: $pinkRadio;
+        }
+      }
+
+      &_dirty-red{
+        span{
+          background: $dirtyRedRadio;
+        }
+      }
+
+      &_white{
+        span{
+          background: $whiteRadio;
+        }
+      }
+
+      &_gray{
+        span{
+          background: $grayRadio;
+        }
+      }
+
+      &_brown{
+        span{
+          background: $brownRadio;
+        }
+      }
+
+      &_black{
+        span{
+          background: $blackRadio;
+        }
+      }
+    }
+
+    &__mail{
+      font-size: 14px;
+      font-weight: 600;
+      width: calc(80px + (191 - 80) * ((100vw - 1024px) / (1280 - 1024)));
+      margin-right: calc(10px + (19 - 10) * ((100vw - 1024px) / (1280 - 1024)));
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (min-width: 1280px) {
+        margin-right: 19px;
+        width: 191px;
+      }
+
+      @include media-breakpoint-down(md){
+        width: 100%;
+        margin-right: 0;
+        font-weight: 300;
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &__size{
+      max-width: 115px;
+      width: 100%;
+      font-weight: 600;
+      margin-right: calc(10px + (13 - 10) * ((100vw - 1024px) / (1280 - 1024)));
+
+      @media (min-width: 1280px) {
+        margin-right: 13px;
+      }
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        padding: 16px 0;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: $whiteColor;
+          opacity: 0.1;
+          left: 0;
+        }
+
+        &:before {
+          top: 0;
+        }
+
+        &:after {
+          bottom: 0;
+        }
+      }
+    }
+
+    &__comment,
+    &__address{
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      max-width: 145px;
+      width: 100%;
+      margin-right: 4px;
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-right: 0;
+        font-size: 14px;
+        gap: 5px;
+        line-height: 1.3;
+      }
+    }
+
+    &__comment{
+      @include media-breakpoint-down(md){
+        grid-column: 2/3;
+      }
+    }
+
+    &__address{
+      @include media-breakpoint-down(md){
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+
+    &__action{
+      display: flex;
+      max-width: 115px;
+      width: 100%;
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-top: 6px;
+      }
+
+      .btn{
+        padding: 13px;
+        border-radius: 8px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__label{
+      display: none;
+      font-size: 14px;
+      font-weight: 300;
+      color: $whiteColor;
+
+      @include media-breakpoint-down(md){
+        display: block;
+      }
+    }
+
+    &__show-more{
+      color: $blueCardBg;
+      font-weight: 600;
+      width: fit-content;
+      position: relative;
+
+      @include media-breakpoint-down(md){
+        display: none;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: $blueCardBg;
+      }
+    }
+
+    &__info{
+      height: 12px;
+      overflow: hidden;
+
+      @include media-breakpoint-down(md){
+        height: fit-content;
+        overflow: unset;
+      }
+    }
+  }
+}
