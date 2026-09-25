@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/cabinet-admin.min.css?_v=20260925125632">
+  <title>Cabinet</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="wrapper__content">
+      <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a href="index.html" class="header__logo">
+        <img src="img/svg/logo-main.svg" alt="logo">
+      </a>
+
+      <nav class="header__menu">
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-item_available" id="messages">
+              <img src="img/svg/messages.svg" alt="messages">
+
+              Messages
+            </li>
+
+            <li class="menu__list-item menu__list-item_available" id="orders">
+              <img src="img/svg/orders.svg" alt="orders">
+
+              Orders
+            </li>
+
+            <li class="menu__list-item menu__list-item_available" id="nft-orders">
+              <img src="img/svg/nft-orders.svg" alt="nft-orders">
+
+              NFT Orders
+            </li>
+
+            <li class="menu__list-item menu__list-item_available" id="workers">
+              <img src="img/svg/workers.svg" alt="workers">
+
+              Workers
+            </li>
+
+            <li class="menu__list-item menu__list-item_no-available" id="statistics">
+              <img src="img/svg/statistics.svg" alt="statistics">
+
+              Statistics
+            </li>
+            
+            <li class="menu__list-item logout">
+              <a href="index.html">
+                <img src="img/svg/log-out-gray.svg" alt="log-out-gray">
+
+                Log out
+              </a>
+
+              <p class="menu__info">
+                All rights reserved © 2022
+              </p>
+            </li>
+          </ul>
+
+          <ul class="menu__btns">
+            <li class="menu__log-out">
+              <a href="index.html">
+                Log out
+
+                <img src="img/svg/log-out-light.svg" alt="log-out-light">
+              </a>
+            </li>
+          </ul>
+
+          <div class="menu__back"></div>
+        </div>
+      </nav>
+
+      <div class="header__burger-menu burger-menu">
+        <div class="burger-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="main__items messages"></div>
+
+        <div class="main__items orders">
+    <div class="orders__content">
+      <h2 class="orders__title">
+        My orders
+      </h2>
+
+      <ul class="orders__table table">
+        <li class="table__head">
+          <p class="table__type">
+            Type of item
+          </p>
+
+          <p class="table__color">
+            Color
+          </p>
+
+          <p class="table__mail">
+            E-mail
+          </p>
+
+          <p class="table__size">
+            Size
+          </p>
+
+          <p class="table__comment">
+            Comment
+          </p>
+
+          <p class="table__address">
+            Delivery address
+          </p>
+
+          <p class="table__action">
+            Action
+          </p>
+        </li>
+
+      </ul>
+    </div>
+</div>
+
+        <div class="main__items nft-orders"></div>
+
+        <div class="main__items workers"></div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="js/cabinet-admin.min.js?_v=20260925125632"></script>
+</body>
+</html>
