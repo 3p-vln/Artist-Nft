@@ -20,6 +20,7 @@ export class Orders {
 			this.renderOrder(order)
 		})
 		
+		this.showMore()
 	}
 	
 	ordersWithDate() {
@@ -40,7 +41,6 @@ export class Orders {
 		
 		return new Date(timestamp).toISOString().split('T')[0];
 	};
-	
 	
 	renderOrder(order){
 		const ordersContainer = document.querySelector('.table');
@@ -101,9 +101,9 @@ export class Orders {
 		const orderAction = document.createElement('p');
 		orderAction.classList.add('order__action');
 		orderAction.innerHTML = `
-			<a href="" class="order__btn btn btn_light">
+			<button class="order__btn btn btn_light" data-email="${order.mail}">
       	Message
-      </a>
+      </button>
 		`;
 		
 		orderMainInfo.appendChild(orderType);
@@ -119,5 +119,33 @@ export class Orders {
 		orderCard.appendChild(orderAction);
 		
 		ordersContainer.appendChild(orderCard);
+	}
+	
+	showMore(){
+		const clickedComment = document.querySelectorAll('.order__comment');
+		const clickedAddress = document.querySelectorAll('.order__address');
+		
+		clickedComment.forEach(comment => {
+			comment.addEventListener('click', (event) => {
+				this.showMoreEvent(event, comment);
+			})
+		})
+		
+		clickedAddress.forEach(address => {
+			address.addEventListener('click', (event) => {
+				this.showMoreEvent(event, address);
+			})
+		})
+	}
+	
+	showMoreEvent(event, el){
+		const showMore = event.target.closest('.order__show-more');
+		
+		if (!showMore) return;
+		
+		const info = el.querySelector('.order__info');
+		
+		showMore.style.display = 'none';
+		info.style.height = 'fit-content';
 	}
 }

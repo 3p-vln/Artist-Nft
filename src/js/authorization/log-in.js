@@ -56,5 +56,17 @@ export class LogIn {
 		}
 		
 		localStorage.setItem('currentUser', JSON.stringify(userFromData));
+		
+		switch (userFromData.role){
+			case 'admin':
+				window.location.replace('/cabinet-admin.html?page=messages');
+				break;
+			case 'customer':
+				window.location.replace('/cabinet-client.html?page=messages');
+				break;
+			case 'artist':
+				window.location.replace('/cabinet-worker.html?page=messages');
+				break;
+		}
 	}
 }

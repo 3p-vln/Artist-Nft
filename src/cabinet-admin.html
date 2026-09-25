@@ -7,19 +7,26 @@
 })
 
 <body>
+
 <div class="wrapper">
   <div class="container">
     <div class="wrapper__content">
       @@include('html/cabinet/header.html', {
-      'messagesActive': 'active',
-      'ordersActive': 'active',
-      'nftOrdersActive': 'active',
-      'workersActive': 'active',
-      'statisticsActive': 'no-active',
+        'messagesAvailable': 'available',
+        'ordersAvailable': 'available',
+        'nftOrdersAvailable': 'available',
+        'workersAvailable': 'available',
+        'statisticsAvailable': 'no-available',
       })
 
       <main class="main">
+        @@include('html/cabinet/messages.html')
+
         @@include('html/cabinet/orders.html')
+
+        @@include('html/cabinet/nft-orders.html')
+
+        @@include('html/cabinet/workers.html')
       </main>
     </div>
   </div>

@@ -71,6 +71,16 @@ body {
     padding: 0;
     height: fit-content;
   }
+
+  &__items{
+    &_active{
+      display: block;
+    }
+
+    &_no-active{
+      display: none;
+    }
+  }
 }
 
 .container{

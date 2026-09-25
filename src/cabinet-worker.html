@@ -7,19 +7,22 @@
 })
 
 <body>
+
 <div class="wrapper">
-  @@include('html/cabinet/header.html', {
-    'messagesActive': 'active',
-    'ordersActive': 'no-active',
-    'nftOrdersActive': 'no-active',
-    'workersActive': 'no-active',
-    'statisticsActive': 'active',
-  })
+  <div class="container">
+    <div class="wrapper__content">
+      @@include('html/cabinet/header.html', {
+        'messagesAvailable': 'available',
+        'ordersAvailable': 'no-available',
+        'nftOrdersAvailable': 'no-available',
+        'workersAvailable': 'no-available',
+        'statisticsAvailable': 'available',
+      })
 
-  <main class="main">
-
-  </main>
-
+      <main class="main">
+      </main>
+    </div>
+  </div>
 </div>
 
 <script src="js/cabinet-worker.min.js"></script>

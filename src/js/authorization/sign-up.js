@@ -90,5 +90,17 @@ export class SignUp {
 		};
 		
 		localStorage.setItem('currentUser', JSON.stringify(newUser));
+		
+		switch (roleValue) {
+			case 'admin':
+				window.location.replace('/cabinet-admin.html');
+				break;
+			case 'customer':
+				window.location.replace('/cabinet-client.html');
+				break;
+			case 'artist':
+				window.location.replace('/cabinet-worker.html');
+				break;
+		}
 	}
 }
