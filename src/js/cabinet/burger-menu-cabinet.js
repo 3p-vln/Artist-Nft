@@ -2,9 +2,13 @@ export class BurgerMenuCabinet {
 	constructor(){
 		this.menu = document.querySelector('.menu');
 		this.burgerBtn = document.querySelector('.burger-menu__btn');
+		this.menuItems = document.querySelectorAll('.menu__list-item');
 		
 		this.toggle();
 		this.resizeWindow();
+		this.menuItems.forEach(item => {
+			this.closeAfterChose(item)
+		})
 	}
 	
 	toggle(){
@@ -45,5 +49,14 @@ export class BurgerMenuCabinet {
 		} else {
 			document.body.style.overflow = '';
 		}
+	}
+	
+	closeAfterChose(item){
+		item.addEventListener('click', () => {
+			this.menu.classList.remove('menu_active');
+			this.burgerBtn.classList.remove('burger-menu__btn_active');
+			this.menu.style.right = '100%';
+			document.body.style.overflow = ''
+		})
 	}
 }

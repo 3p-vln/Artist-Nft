@@ -93,13 +93,13 @@ export class SignUp {
 		
 		switch (roleValue) {
 			case 'admin':
-				window.location.replace('/cabinet-admin.html');
+				window.location.href = 'cabinet-admin.html?page=messages';
 				break;
 			case 'customer':
-				window.location.replace('/cabinet-client.html');
+				window.location.href = 'cabinet-client.html?page=messages';
 				break;
 			case 'artist':
-				window.location.replace('/cabinet-worker.html');
+				window.location.href = 'cabinet-worker.html?page=messages';
 				break;
 		}
 	}
