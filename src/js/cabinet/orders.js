@@ -1,10 +1,12 @@
 import {database} from "../data/simulate-db";
+import {FilterTable} from "./filter-table";
 
 export class Orders {
 	constructor() {
 		this.currentUserEmail = JSON.parse(localStorage.getItem('currentUser')).email;
 		this.currentUserRole = JSON.parse(localStorage.getItem('currentUser')).role;
 		this.orders = null;
+		this.ordersContainer = document.querySelector('.orders__table');
 		
 		switch (this.currentUserRole) {
 			case "admin":
@@ -16,11 +18,27 @@ export class Orders {
 				);
 		}
 		
-		this.ordersWithDate().forEach((order) => {
+		this.init();
+		
+		new FilterTable('orders', this.orders, () => {
+			this.init();
+		})
+	}
+	
+	init(){
+		this.clearOrders();
+		
+		this.orders.forEach((order) => {
 			this.renderOrder(order)
 		})
 		
 		this.showMore()
+	}
+	
+	clearOrders() {
+		this.ordersContainer
+			.querySelectorAll('.order')
+			.forEach(order => order.remove());
 	}
 	
 	ordersWithDate() {
@@ -43,8 +61,6 @@ export class Orders {
 	};
 	
 	renderOrder(order){
-		const ordersContainer = document.querySelector('.table');
-		
 		const orderCard = document.createElement('li');
 		orderCard.classList.add('table__row', 'order', `order_${order.id}`);
 		
@@ -118,7 +134,7 @@ export class Orders {
 		orderCard.appendChild(orderSubInfo);
 		orderCard.appendChild(orderAction);
 		
-		ordersContainer.appendChild(orderCard);
+		this.ordersContainer.appendChild(orderCard);
 	}
 	
 	showMore(){

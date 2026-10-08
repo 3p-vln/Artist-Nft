@@ -1,8 +1,19 @@
 import {database} from "../data/simulate-db";
+import {FilterTable} from "./filter-table";
 
 export class NftOrders {
 	constructor() {
 		this.nftOrders = database["nft-orders"].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+		this.ordersContainer = document.querySelector('.nft-orders__table');
+		
+		this.init();
+		new FilterTable('nft-orders', this.nftOrders, () => {
+			this.init();
+		})
+	}
+	
+	init(){
+		this.clearOrders();
 		
 		this.nftOrders.forEach(nft => {
 			this.renderOrder(nft)
@@ -15,10 +26,14 @@ export class NftOrders {
 		})
 	}
 	
+	clearOrders() {
+		this.ordersContainer
+			.querySelectorAll('.nft-order')
+			.forEach(order => order.remove());
+	}
+	
 	renderOrder(nftOrder) {
 		const nft = database.nfts.find(nft => nft.id === nftOrder['nft-id']);
-		
-		const ordersContainer = document.querySelector('.nft-orders__table');
 		
 		const orderCard = document.createElement('li');
 		orderCard.classList.add('table__row', 'nft-order', `nft-order_${nftOrder.id}`);
@@ -126,7 +141,7 @@ export class NftOrders {
 		orderCard.appendChild(price);
 		orderCard.appendChild(date.cloneNode(true));
 		
-		ordersContainer.appendChild(orderCard);
+		this.ordersContainer.appendChild(orderCard);
 	}
 	
 	copyAddress(copy){
