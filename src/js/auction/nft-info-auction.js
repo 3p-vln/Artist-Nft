@@ -92,7 +92,7 @@ export class NftInfoAuction extends NftInfo {
 		const secondsElement = this.nftInfoContainer.querySelector('.countdown__seconds');
 		const finalDateElement = this.nftInfoContainer.querySelector('.timer__final-date');
 		
-		const targetDate = new Date('2026-09-08T08:00:00');
+		const targetDate = new Date('2027-01-01T08:00:00');
 		
 		const updateTimer = () => {
 			const difference = targetDate - new Date();

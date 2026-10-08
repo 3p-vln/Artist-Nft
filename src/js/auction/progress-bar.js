@@ -4,8 +4,8 @@ export class ProgressBar {
 		
 		if (!this.ptogressBarEl) return;
 		
-		this.startDate = new Date('2026-08-08T08:00:00');
-		this.targetDate = new Date('2026-09-08T08:00:00');
+		this.startDate = new Date('2026-09-08T08:00:00');
+		this.targetDate = new Date('2027-01-01T08:00:00');
 		
 		this.update();
 		

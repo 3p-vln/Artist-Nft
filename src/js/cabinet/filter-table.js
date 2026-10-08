@@ -159,6 +159,5 @@ export class FilterTable {
 		}
 		
 		this.onSort();
-		console.log(this.list, this.sortDirection)
 	}
 }
