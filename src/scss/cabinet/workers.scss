@@ -1,0 +1,207 @@
+.workers{
+  width: 100%;
+
+  &__title{
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 86px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(md){
+      display: block;
+    }
+  }
+
+  .table{
+    @include media-breakpoint-down(md){
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    &__head{
+      font-size: 14px;
+      padding: 0 35px 0 15px;
+      display: flex;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down(md){
+        display: none;
+      }
+    }
+
+    &__name{
+      max-width: 120px;
+      width: 100%;
+      margin-right: 13px;
+    }
+
+    &__mail{
+      max-width: 235px;
+      width: 100%;
+      margin-right: 22px;
+    }
+
+    &__comment{
+      max-width: 100%;
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    &__plan{
+      max-width: 113px;
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+
+  .worker{
+    display: flex;
+    background: $background;
+    border-radius: 14px;
+    padding: 18px 33px 18px 24px;
+    align-items: center;
+    margin-bottom: 6px;
+
+    @include media-breakpoint-down(md){
+      flex-direction: column;
+      background: $moreLightBgColor;
+      align-items: flex-start;
+      padding: 20px 18px;
+      margin-bottom: 0;
+      gap: 10px;
+    }
+
+    &__name {
+      max-width: 110px;
+      width: 100%;
+      margin-right: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-right: 0;
+        line-height: 0.7;
+        margin-top: 3px;
+      }
+    }
+
+    &__mail{
+      max-width: calc(150px + (235 - 150)*((100vw - 1024px) / (1280 - 1024)));
+      width: 100%;
+      margin-right: 22px;
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (min-width: 1280px) {
+        max-width: 235px;
+      }
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-top: 0;
+        font-weight: 300;
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &__comment{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      margin-right: 30px;
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        padding-top: 15px;
+        gap: 4px;
+        margin-right: 0;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: 0;
+          left: 0;
+          background: $whiteColor;
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &__text{
+      height: 39px;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.1px;
+      overflow: hidden;
+
+      @include media-breakpoint-down(md){
+        max-height: 63px;
+        height: fit-content;
+        line-height: 1.5;
+      }
+    }
+
+    &__show-more{
+      font-size: 12px;
+      color: $blueCardBg;
+      font-weight: 600;
+      width: fit-content;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: $blueCardBg;
+      }
+    }
+
+    &__plan{
+      max-width: 115px;
+      width: 100%;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $blueToPurpleGradient;
+      border-radius: 8px;
+      padding: 13px 0;
+      color: $background;
+      font-size: 14px;
+      font-weight: 600;
+
+      @include media-breakpoint-down(md){
+        max-width: 100%;
+        margin-top: auto;
+        margin-right: 0;
+        gap: 4px;
+      }
+
+      span {
+        color: $background;
+
+        @include media-breakpoint-up(md){
+          display: none;
+        }
+      }
+    }
+  }
+}

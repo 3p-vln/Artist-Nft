@@ -156,6 +156,40 @@ export class FilterTable {
 				});
 				
 				break;
+			
+			case 'Name':
+				this.list.sort((a, b) => {
+					return ascending
+						? a.username.localeCompare(b.username)
+						: b.username.localeCompare(a.username);
+				});
+				
+				break;
+			
+			case 'Mail':
+				this.list.sort((a, b) => {
+					return ascending
+						? a.email.localeCompare(b.email)
+						: b.email.localeCompare(a.email);
+				});
+				
+				break;
+			
+			case 'Plan': {
+				const planOrder = {
+					week: 1,
+					month: 2,
+					year: 3,
+				};
+				
+				this.list.sort((a, b) => {
+					return ascending
+						? planOrder[a.plan] - planOrder[b.plan]
+						: planOrder[b.plan] - planOrder[a.plan];
+				});
+				
+				break;
+			}
 		}
 		
 		this.onSort();

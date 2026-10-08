@@ -981,7 +981,7 @@ export const database = {
 			role: 'artist',
 			premium: true,
 			plan: 'month',
-			comment: '',
+			comment: 'The reserved approach helped create a comfortable atmosphere for everyone involved. Every small detail was considered with patience, while the final result remained practical, personal, and carefully prepared for future use.',
 		},
 		{
 			id: 'F4nY7kS1xTc',
