@@ -37,7 +37,7 @@ export class Workers {
 		
 		const workerName = document.createElement('p');
 		workerName.classList.add('worker__name');
-		workerName.innerText = user.username;
+		workerName.innerText = user.name + ' ' + user.surname;
 		
 		const workerMail = document.createElement('p');
 		workerMail.classList.add('worker__mail');
