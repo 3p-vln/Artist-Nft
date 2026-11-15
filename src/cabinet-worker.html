@@ -12,7 +12,7 @@
   <div class="container">
     <div class="wrapper__content">
       @@include('html/cabinet/header.html', {
-        'messagesAvailable': 'available',
+        'postsAvailable': 'available',
         'ordersAvailable': 'no-available',
         'nftOrdersAvailable': 'no-available',
         'workersAvailable': 'no-available',
@@ -20,7 +20,7 @@
       })
 
       <main class="main">
-        @@include('html/cabinet/messages.html')
+        @@include('html/cabinet/posts.html')
 
         @@include('html/cabinet/statistics.html')
       </main>

@@ -1,0 +1,198 @@
+.forum{
+  margin-top: 64px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 72px;
+  }
+
+  &__bg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 320px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+      height: 317px;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .container{
+    max-width: 1140px;
+  }
+
+  &__info{
+    padding-top: 58px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 40px;
+    }
+  }
+
+  &__title{
+    font-size: clamp(26px, 2.5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__popular{
+    font-size: clamp(18px, 2.5vw, 20px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include media-breakpoint-down(md) {
+      gap: 7px;
+    }
+
+    img{
+      @include media-breakpoint-down(md) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .swiper{
+    margin-top: 23px;
+    overflow: visible;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 28px;
+    }
+  }
+
+  .post{
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: $lightBgColor;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 290px;
+    }
+
+    &__main-info{
+      position: relative;
+    }
+
+    &__bg{
+      width: 100%;
+      height: 130px;
+
+      @include media-breakpoint-down(sm) {
+        width: 120%;
+        height: 140px;
+      }
+
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__avatar-date{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 0 12px;
+      }
+    }
+
+    &__avatar{
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      @include media-breakpoint-down(sm) {
+        width: 70px;
+        height: 70px;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__date{
+      font-size: 14px;
+      margin-top: 50px;
+      margin-right: 4px;
+      letter-spacing: 0.3px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 52px;
+        margin-right: 0;
+      }
+    }
+
+    &__sub-info{
+      padding: 16px 25px 23px 28px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 16px 10px 28px 12px;
+      }
+    }
+
+    &__author{
+      font-size: 14px;
+      letter-spacing: 0.1px;
+      margin-bottom: 6px;
+    }
+
+    &__question{
+      font-size: clamp(18px, 2.5vw, 20px);
+      font-weight: 700;
+    }
+
+    &__btns{
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      gap: 20px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 18px;
+      }
+    }
+
+    &__view{
+      padding: 11px 20px;
+
+      span{
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &__answer{
+      background: transparent;
+      color: $greenCardBg;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}

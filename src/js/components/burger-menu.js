@@ -60,13 +60,13 @@ export class BurgerMenu{
 		
 		switch(currentUser.role){
 			case 'admin':
-				authBtn.href = 'cabinet-admin.html?page=messages';
+				authBtn.href = 'cabinet-admin.html?page=posts';
 				break;
 			case 'artist':
-				authBtn.href = 'cabinet-worker.html?page=messages';
+				authBtn.href = 'cabinet-worker.html?page=posts';
 				break;
 			case 'customer':
-				authBtn.href = 'cabinet-client.html?page=messages';
+				authBtn.href = 'cabinet-client.html?page=posts';
 				break;
 		}
 	}

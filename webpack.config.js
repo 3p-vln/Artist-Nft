@@ -22,6 +22,7 @@ export const webpackConfig = (isMode) => {
 			premium: path.join(paths.src, 'js/premium.js'),
 			contact: path.join(paths.src, 'js/contact.js'),
 			authorization: path.join(paths.src, 'js/authorization.js'),
+			blog: path.join(paths.src, 'js/blog.js'),
 			'cabinet-admin': path.join(paths.src, 'js/cabinet-admin.js'),
 			'cabinet-worker': path.join(paths.src, 'js/cabinet-worker.js'),
 			'cabinet-client': path.join(paths.src, 'js/cabinet-client.js'),
