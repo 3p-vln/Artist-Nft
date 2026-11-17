@@ -41,8 +41,12 @@
       padding: 7px;
       height: 63px;
       gap: 0;
-      max-width: 370px;
-      width: 100%;
+      max-width: 100%;
+      width: 370px;
+    }
+
+    @include media-breakpoint-down(xs){
+      width: 345px;
     }
 
     &::before {

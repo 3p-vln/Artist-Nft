@@ -1484,7 +1484,6 @@ export const database = {
 		}
 	],
 	
-	
 	posts: [
 		{
 			id: 'W8kR2mQ5vXa',
