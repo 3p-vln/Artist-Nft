@@ -2,7 +2,7 @@ export const database = {
 	nfts: [
 		{
 			id: 'A7kP92xLm4Q',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Aurora Echo',
@@ -16,7 +16,7 @@ export const database = {
 		},
 		{
 			id: 'z8Nq3Wb71Rt',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Velvet Horizon',
@@ -30,7 +30,7 @@ export const database = {
 		},
 		{
 			id: 'K4mX9pL2sV8',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Crimson Orbit',
@@ -44,7 +44,7 @@ export const database = {
 		},
 		{
 			id: 'RT6cY1nQ5wE',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Silent Bloom',
@@ -58,7 +58,7 @@ export const database = {
 		},
 		{
 			id: 'P9vB3kD7xM2',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Golden Mirage',
@@ -72,7 +72,7 @@ export const database = {
 		},
 		{
 			id: 'hL8qR4zN6tK',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Emerald Pulse',
@@ -86,7 +86,7 @@ export const database = {
 		},
 		{
 			id: 'X2mJ7pC9aW5',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'AUCTION',
 			title: 'Neon Genesis',
@@ -100,7 +100,7 @@ export const database = {
 		},
 		{
 			id: 'BQ5nV8sT3yL',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Lunar Garden',
@@ -114,7 +114,7 @@ export const database = {
 		},
 		{
 			id: 'm6xK1rP8dZ4',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Oceanic Dream',
@@ -128,7 +128,7 @@ export const database = {
 		},
 		{
 			id: 'tW9cF2mL7qN',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Electric Dawn',
@@ -142,7 +142,7 @@ export const database = {
 		},
 		{
 			id: 'rT6cY1nQ5wE',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Midnight Canvas',
@@ -156,7 +156,7 @@ export const database = {
 		},
 		{
 			id: 'nY7bQ2sM9wC',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Crystal Rain',
@@ -170,7 +170,7 @@ export const database = {
 		},
 		{
 			id: 'D5zL8rK3xP6',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Solar Whisper',
@@ -184,7 +184,7 @@ export const database = {
 		},
 		{
 			id: 'qN4tV7mB1yR',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Violet Memory',
@@ -198,7 +198,7 @@ export const database = {
 		},
 		{
 			id: 'C8pX2kL6sW9',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Scarlet Wave',
@@ -212,7 +212,7 @@ export const database = {
 		},
 		{
 			id: 'jM3qZ7nT5vK',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Digital Serenity',
@@ -226,7 +226,7 @@ export const database = {
 		},
 		{
 			id: 'V9rD4xP2mL8',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Cosmic Bloom',
@@ -240,7 +240,7 @@ export const database = {
 		},
 		{
 			id: 'wK6sN1bQ8yT',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Frozen Light',
@@ -254,7 +254,7 @@ export const database = {
 		},
 		{
 			id: 'F2mR9cX4pJ7',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Mystic Geometry',
@@ -268,7 +268,7 @@ export const database = {
 		},
 		{
 			id: 'Y5kL3vN8qD1',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Celestial Path',
@@ -282,7 +282,7 @@ export const database = {
 		},
 		{
 			id: 'Q7mX2pL9vK4',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Infinite Motion',
@@ -296,7 +296,7 @@ export const database = {
 		},
 		{
 			id: 'aN8rT5wC3zY',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Desert Mirage',
@@ -310,7 +310,7 @@ export const database = {
 		},
 		{
 			id: 'K6bP1xM9qR7',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Moonlit Silence',
@@ -324,7 +324,7 @@ export const database = {
 		},
 		{
 			id: 'vD4sL8nW2tF',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Radiant Void',
@@ -338,7 +338,7 @@ export const database = {
 		},
 		{
 			id: 'Z3kQ7mB5xN9',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Sapphire Dream',
@@ -352,7 +352,7 @@ export const database = {
 		},
 		{
 			id: 'pR8yC2vL6jT',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Abstract Gravity',
@@ -366,7 +366,7 @@ export const database = {
 		},
 		{
 			id: 'M5nX9qK3wD7',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Golden Horizon',
@@ -380,7 +380,7 @@ export const database = {
 		},
 		{
 			id: 'tB2zV8rP4sL',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Hidden Paradise',
@@ -394,7 +394,7 @@ export const database = {
 		},
 		{
 			id: 'H9mC6xQ1kW5',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Electric Mirage',
@@ -408,7 +408,7 @@ export const database = {
 		},
 		{
 			id: 'yL4pN7vR2bK',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Starlit Garden',
@@ -422,7 +422,7 @@ export const database = {
 		},
 		{
 			id: 'W8sD3mX6qJ1',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Velvet Storm',
@@ -436,7 +436,7 @@ export const database = {
 		},
 		{
 			id: 'cK5rT9nP2zV',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Lunar Reflection',
@@ -450,7 +450,7 @@ export const database = {
 		},
 		{
 			id: 'yL4pN7vR2bK',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Crimson Symphony',
@@ -464,7 +464,7 @@ export const database = {
 		},
 		{
 			id: 'nF2kY6pC9sM',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Emerald Horizon',
@@ -478,7 +478,7 @@ export const database = {
 		},
 		{
 			id: 'J4vN8rX1tK7',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Neon Reverie',
@@ -492,7 +492,7 @@ export const database = {
 		},
 		{
 			id: 'bP9qL3wM5zR',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Cosmic Silence',
@@ -506,7 +506,7 @@ export const database = {
 		},
 		{
 			id: 'R7mQ2xL9pK4',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Digital Sunset',
@@ -520,7 +520,7 @@ export const database = {
 		},
 		{
 			id: 'B3vN8tY5qW1',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Ocean Whisper',
@@ -534,7 +534,7 @@ export const database = {
 		},
 		{
 			id: 'L6pX4mC9zR2',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Solar Bloom',
@@ -548,7 +548,7 @@ export const database = {
 		},
 		{
 			id: 'Q9wK2nF7sM5',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Midnight Orbit',
@@ -562,7 +562,7 @@ export const database = {
 		},
 		{
 			id: 'T4rP8vL1xN6',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Crystal Horizon',
@@ -576,7 +576,7 @@ export const database = {
 		},
 		{
 			id: 'M2kD7qX5bV9',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Violet Echo',
@@ -590,7 +590,7 @@ export const database = {
 		},
 		{
 			id: 'C8nR3yW6pL2',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Scarlet Dream',
@@ -604,7 +604,7 @@ export const database = {
 		},
 		{
 			id: 'V5mK9tQ2xP7',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Frozen Mirage',
@@ -618,7 +618,7 @@ export const database = {
 		},
 		{
 			id: 'N1zL6rB8qX4',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Mystic Dawn',
@@ -632,7 +632,7 @@ export const database = {
 		},
 		{
 			id: 'P7xC2mR9wK5',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Celestial Bloom',
@@ -646,7 +646,7 @@ export const database = {
 		},
 		{
 			id: 'Y4qT8nV3pM6',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Infinite Horizon',
@@ -660,7 +660,7 @@ export const database = {
 		},
 		{
 			id: 'F9kW5sL2dR8',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Desert Moon',
@@ -674,7 +674,7 @@ export const database = {
 		},
 		{
 			id: 'X3vM7pQ1nK9',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Radiant Symphony',
@@ -688,7 +688,7 @@ export const database = {
 		},
 		{
 			id: 'D8rL4xT6wP2',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Sapphire Echo',
@@ -702,7 +702,7 @@ export const database = {
 		},
 		{
 			id: 'K5nB9qY3mV7',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Abstract Dream',
@@ -716,7 +716,7 @@ export const database = {
 		},
 		{
 			id: 'W2pC6zR8xL4',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Golden Orbit',
@@ -730,7 +730,7 @@ export const database = {
 		},
 		{
 			id: 'G7mT1vN5kQ9',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Hidden Horizon',
@@ -744,7 +744,7 @@ export const database = {
 		},
 		{
 			id: 'S4xP8rL2dM6',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Electric Bloom',
@@ -758,7 +758,7 @@ export const database = {
 		},
 		{
 			id: 'J9qK3wV7nB1',
-			img: 'img/components/cards/nft-img-1.png',
+			img: 'img/components/cards/nft-img-1',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Starlit Mirage',
@@ -772,7 +772,7 @@ export const database = {
 		},
 		{
 			id: 'E6mR2pX8tC5',
-			img: 'img/components/cards/nft-img-2.png',
+			img: 'img/components/cards/nft-img-2',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Velvet Echo',
@@ -786,7 +786,7 @@ export const database = {
 		},
 		{
 			id: 'U3nL7kQ5vW9',
-			img: 'img/components/cards/nft-img-3.png',
+			img: 'img/components/cards/nft-img-3',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Lunar Symphony',
@@ -800,7 +800,7 @@ export const database = {
 		},
 		{
 			id: 'A8pY4mD6xR2',
-			img: 'img/components/cards/nft-img-4.png',
+			img: 'img/components/cards/nft-img-4',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Crimson Horizon',
@@ -814,7 +814,7 @@ export const database = {
 		},
 		{
 			id: 'H5vN9qT1sK7',
-			img: 'img/components/cards/nft-img-5.png',
+			img: 'img/components/cards/nft-img-5',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Emerald Dream',
@@ -828,7 +828,7 @@ export const database = {
 		},
 		{
 			id: 'Z2rX6pM8wL3',
-			img: 'img/components/cards/nft-img-6.png',
+			img: 'img/components/cards/nft-img-6',
 			imgBig: 'img/pricing/grid.jpg',
 			type: 'NFT',
 			title: 'Neon Silence',
@@ -849,7 +849,7 @@ export const database = {
 			username: 'alex.morgan',
 			name: 'Alex',
 			surname: 'Morgan',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Morgan4821',
 			role: 'customer',
 			premium: true,
@@ -862,7 +862,7 @@ export const database = {
 			username: 'sarah.jenkins',
 			name: 'Sarah',
 			surname: 'Jenkins',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Sarah7392',
 			role: 'customer',
 			premium: false,
@@ -875,7 +875,7 @@ export const database = {
 			username: 'daniel.carter',
 			name: 'Daniel',
 			surname: 'Carter',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Daniel1847',
 			role: 'artist',
 			premium: true,
@@ -888,7 +888,7 @@ export const database = {
 			username: 'chloe.martin',
 			name: 'Chloe',
 			surname: 'Martin',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Chloe5924',
 			role: 'artist',
 			premium: true,
@@ -901,7 +901,7 @@ export const database = {
 			username: 'michael.thompson',
 			name: 'Michael',
 			surname: 'Thompson',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Michael6381',
 			role: 'customer',
 			premium: true,
@@ -914,7 +914,7 @@ export const database = {
 			username: 'isabella.roberts',
 			name: 'Isabella',
 			surname: 'Roberts',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Bella9274',
 			role: 'admin',
 			premium: true,
@@ -927,7 +927,7 @@ export const database = {
 			username: 'william.harris',
 			name: 'William',
 			surname: 'Harris',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'William4518',
 			role: 'customer',
 			premium: false,
@@ -940,7 +940,7 @@ export const database = {
 			username: 'charlotte.walker',
 			name: 'Charlotte',
 			surname: 'Walker',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Charlotte8253',
 			role: 'artist',
 			premium: true,
@@ -953,7 +953,7 @@ export const database = {
 			username: 'benjamin.young',
 			name: 'Benjamin',
 			surname: 'Young',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Benjamin3169',
 			role: 'customer',
 			premium: true,
@@ -966,7 +966,7 @@ export const database = {
 			username: 'amelia.king',
 			name: 'Amelia',
 			surname: 'King',
-			img: 'img/components/cards/pechen-auth.png',
+			img: 'img/components/cards/pechen-auth',
 			password: 'Amelia7042',
 			role: 'admin',
 			premium: true,
@@ -1482,5 +1482,326 @@ export const database = {
 			date: '2026-09-12T19:52:47Z',
 			status: 'Refund'
 		}
+	],
+	
+	
+	posts: [
+		{
+			id: 'W8kR2mQ5vXa',
+			'published-date': '2026-09-12T14:32:08Z',
+			author: 'Q4mZ8rT2vKx',
+			title: 'How can I buy art using cryptocurrency?',
+			description: 'I have recently discovered several artists whose work I would really like to purchase. However, I am more comfortable using cryptocurrency for online payments. Is there a reliable way to buy original artwork with Bitcoin or other digital currencies? I would also like to know how artists usually handle these transactions and whether there are any additional fees involved.',
+			answers: [
+				{
+					'answer-date': '2026-09-12T16:45:21Z',
+					user: 'R2vK8mJ5sYp',
+					answer: 'Some online art platforms already support cryptocurrency payments. You can also contact artists directly and ask whether they accept crypto. Just make sure the transaction is secure.'
+				},
+				{
+					'answer-date': '2026-09-13T09:18:42Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'I would recommend checking NFT marketplaces if you are interested in digital art. For traditional artwork, direct agreements with artists may be a better option.'
+				}
+			]
+		},
+		{
+			id: 'K3nP7xT9mLc',
+			'published-date': '2026-09-13T10:15:34Z',
+			author: 'N7pL3xW9cQa',
+			title: 'How do I find an artist for a custom portrait?',
+			description: 'I would like to order a custom portrait as a birthday present for someone close to me. I have seen many different artistic styles, but I am not sure how to choose the right artist. Should I focus on their previous work, customer reviews, or pricing? I would appreciate any advice about communicating my expectations and making sure the final result matches the original idea.',
+			answers: [
+				{
+					'answer-date': '2026-09-13T12:40:18Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'Always check the artist portfolio first. Previous commissions will give you a good understanding of their style and quality. It is also important to discuss the details before placing an order.'
+				}
+			]
+		},
+		{
+			id: 'M6qV2wR8pYk',
+			'published-date': '2026-09-14T08:22:19Z',
+			author: 'R2vK8mJ5sYp',
+			title: 'What is the best way to sell digital illustrations?',
+			description: 'I have been creating digital illustrations for several years and recently decided to start selling my work online. There are many platforms available, but I am unsure which ones are suitable for independent artists. I would like to understand how commissions, digital downloads, and licensing work. What would be the best starting point for someone who wants to turn their creative hobby into a small business?',
+			answers: [
+				{
+					'answer-date': '2026-09-14T11:35:47Z',
+					user: 'V2qM6rX9jKb',
+					answer: 'You can start with platforms such as Etsy, ArtStation, or your own portfolio website. Make sure your prices reflect the time and effort invested in every illustration.'
+				},
+				{
+					'answer-date': '2026-09-15T07:12:09Z',
+					user: 'Z8pD2mQ6vHs',
+					answer: 'Social media is also useful for finding customers. Share your creative process and make it easy for people to contact you about commissions.'
+				}
+			]
+		},
+		{
+			id: 'N9xB4kL2sWp',
+			'published-date': '2026-09-15T13:48:52Z',
+			author: 'X6qT1nB8zLm',
+			title: 'How should I calculate the price of my artwork?',
+			description: 'I have recently started receiving requests for commissioned illustrations. Although I enjoy working with clients, I find it difficult to determine a fair price for my work. Some projects require only a few hours, while others involve several days of preparation and revisions. Should artists charge according to working hours, complexity, or the final size of the artwork? I would be interested in hearing how experienced artists approach pricing.',
+			answers: [
+				{
+					'answer-date': '2026-09-15T15:20:31Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'I usually calculate the estimated working hours and add extra costs for revisions and commercial usage. It is important not to undervalue your time.'
+				}
+			]
+		},
+		{
+			id: 'P5mR8zT3qWa',
+			'published-date': '2026-09-16T09:17:26Z',
+			author: 'H9wC4kP7dRx',
+			title: 'Can I commission an artist to create a painting from a photograph?',
+			description: 'I have an old family photograph that means a lot to me, and I would love to transform it into an original painting. I have never commissioned an artist before, so I am not sure what information I should provide. Is it enough to send the original photograph, or should I also explain the colors, atmosphere, and artistic style I would prefer? I would appreciate some advice before contacting an artist.',
+			answers: [
+				{
+					'answer-date': '2026-09-16T11:42:53Z',
+					user: 'Z8pD2mQ6vHs',
+					answer: 'Of course! Most portrait artists accept commissions based on photographs. Send a high-quality reference image and explain what you would like to change or preserve.'
+				},
+				{
+					'answer-date': '2026-09-16T14:06:17Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'You should also discuss the painting size, materials, and expected completion date before confirming the commission.'
+				}
+			]
+		},
+		{
+			id: 'R4wK9nX2bVc',
+			'published-date': '2026-09-17T16:28:41Z',
+			author: 'M3sV8qL2fZn',
+			title: 'Which materials are essential for beginner painters?',
+			description: 'I have always wanted to learn traditional painting, especially working with acrylics and watercolors. However, visiting an art supply store can be overwhelming because there are so many brushes, paints, papers, and other materials available. I do not want to spend too much money before understanding what I actually need. Could experienced painters recommend a basic collection of materials that would be suitable for someone just starting out?',
+			answers: [
+				{
+					'answer-date': '2026-09-17T18:13:22Z',
+					user: 'R2vK8mJ5sYp',
+					answer: 'Start with a small selection of good-quality brushes, basic colors, and suitable paper or canvas. You can expand your collection as you gain experience.'
+				}
+			]
+		},
+		{
+			id: 'T7qL3mV8xNp',
+			'published-date': '2026-09-18T07:54:13Z',
+			author: 'K5xR9tN4bWp',
+			title: 'How can I protect my artwork from being copied online?',
+			description: 'I recently started sharing my illustrations on different social media platforms and noticed that some accounts repost artwork without giving credit to the original creators. I am worried that someone might use my work commercially without permission. Are watermarks enough to protect digital illustrations, or are there other ways to establish ownership and prevent unauthorized use? I would appreciate recommendations from artists who have experienced similar situations.',
+			answers: [
+				{
+					'answer-date': '2026-09-18T10:21:45Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'Use watermarks and keep original high-resolution files with creation dates. You should also clearly state your copyright and usage conditions.'
+				},
+				{
+					'answer-date': '2026-09-18T12:36:19Z',
+					user: 'V2qM6rX9jKb',
+					answer: 'Unfortunately, watermarks cannot prevent every case of copying, but they make unauthorized use more difficult. Documenting your original work is important.'
+				}
+			]
+		},
+		{
+			id: 'V2xM6pQ9kRb',
+			'published-date': '2026-09-19T12:06:37Z',
+			author: 'Z8pD2mQ6vHs',
+			title: 'How long does a custom painting usually take?',
+			description: 'I am planning to order a custom painting for an upcoming anniversary. The artist I contacted mentioned that the process could take several weeks, depending on the complexity of the project. I would like to understand how much time is normally required for an original painting and whether the drying process affects delivery dates. Is it reasonable to request a specific deadline when ordering commissioned artwork?',
+			answers: [
+				{
+					'answer-date': '2026-09-19T14:29:08Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'It depends on the size, technique, and level of detail. Always discuss the deadline in advance because some traditional materials require additional drying time.'
+				}
+			]
+		},
+		{
+			id: 'W5nR2xK8mQv',
+			'published-date': '2026-09-20T09:41:55Z',
+			author: 'F4nY7kS1xTc',
+			title: 'Where can independent artists find new clients?',
+			description: 'I have been working as a freelance illustrator for a while, but finding new clients consistently remains a challenge. Most of my current projects come from personal recommendations, which makes it difficult to plan my workload. I would like to explore other ways of promoting my services and reaching people who are interested in commissioning original artwork. Which platforms or marketing strategies have worked best for independent artists?',
+			answers: [
+				{
+					'answer-date': '2026-09-20T11:18:32Z',
+					user: 'Q4mZ8rT2vKx',
+					answer: 'Build a professional portfolio and keep your social media profiles active. Networking with other creatives can also lead to interesting opportunities.'
+				},
+				{
+					'answer-date': '2026-09-20T16:05:44Z',
+					user: 'R2vK8mJ5sYp',
+					answer: 'Try joining creative communities and freelance platforms. A clear description of your services and prices makes it easier for potential clients to contact you.'
+				}
+			]
+		},
+		{
+			id: 'X8pL4vN2qMt',
+			'published-date': '2026-09-21T14:19:03Z',
+			author: 'V2qM6rX9jKb',
+			title: 'What makes an artwork valuable to collectors?',
+			description: 'I have recently become interested in collecting original paintings and illustrations. Some artworks are surprisingly expensive, even when they appear relatively simple. I would like to understand what factors influence the value of an original piece. Does the artist reputation matter more than the materials and technique, or are there other important considerations that collectors should know about before purchasing their first artwork?',
+			answers: [
+				{
+					'answer-date': '2026-09-21T16:32:51Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'Artist reputation, originality, provenance, technique, and demand can all influence the price. The story and context behind an artwork may also matter.'
+				}
+			]
+		},
+		{
+			id: 'Y3kQ7mP9xWa',
+			'published-date': '2026-09-22T08:33:47Z',
+			author: 'N7pL3xW9cQa',
+			title: 'Can I request changes after ordering a custom artwork?',
+			description: 'I would like to commission a digital illustration, but I am concerned about what happens if the final result does not fully match my expectations. Do artists normally allow customers to request changes during the creative process? How many revisions are usually included in the original price, and should these conditions be discussed before placing an order? I would like to avoid misunderstandings and make the collaboration comfortable for both sides.',
+			answers: [
+				{
+					'answer-date': '2026-09-22T10:12:29Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'Most professional artists include a limited number of revisions. Discuss the revision policy before starting and try to provide clear feedback during the sketch stage.'
+				},
+				{
+					'answer-date': '2026-09-22T13:47:06Z',
+					user: 'Z8pD2mQ6vHs',
+					answer: 'I always send clients an initial sketch for approval. It helps avoid major changes once the final artwork is completed.'
+				}
+			]
+		},
+		{
+			id: 'Z6mT3wR8pKq',
+			'published-date': '2026-09-23T11:52:18Z',
+			author: 'R2vK8mJ5sYp',
+			title: 'What is the difference between an original and a print?',
+			description: 'I have been browsing online art galleries and noticed that some artists offer both original paintings and limited edition prints. The prices can be very different, and I am not entirely sure what distinguishes these options. Are prints considered valuable collectibles, or is an original artwork always a better investment? I would also like to understand whether limited editions have certificates of authenticity.',
+			answers: [
+				{
+					'answer-date': '2026-09-23T13:26:54Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'An original is the unique artwork created by the artist, while a print is a reproduction. Limited edition prints can still have collectible value, especially when signed and numbered.'
+				}
+			]
+		},
+		{
+			id: 'A9vX5nL2qWm',
+			'published-date': '2026-09-24T15:08:36Z',
+			author: 'X6qT1nB8zLm',
+			title: 'How do you overcome creative burnout?',
+			description: 'Recently, I have noticed that creating artwork feels more like a responsibility than something I genuinely enjoy. I have several ongoing projects and constantly think about deadlines, which makes it difficult to experiment with new ideas. I do not want to lose my motivation or stop creating altogether. How do other artists deal with creative burnout while maintaining a healthy balance between personal projects and professional responsibilities?',
+			answers: [
+				{
+					'answer-date': '2026-09-24T17:42:13Z',
+					user: 'Q4mZ8rT2vKx',
+					answer: 'Taking a short break can be surprisingly helpful. Try doing something creative without deadlines or expectations, just for your own enjoyment.'
+				},
+				{
+					'answer-date': '2026-09-25T08:16:49Z',
+					user: 'V2qM6rX9jKb',
+					answer: 'Set realistic working hours and avoid accepting more commissions than you can comfortably complete. Your personal well-being is important.'
+				}
+			]
+		},
+		{
+			id: 'B4qN8xM2vRt',
+			'published-date': '2026-09-25T10:24:59Z',
+			author: 'H9wC4kP7dRx',
+			title: 'How can I verify that an artwork is authentic?',
+			description: 'I recently found an original painting online that I would really like to purchase. However, I am concerned about buying a reproduction that is being advertised as an authentic piece. What documents or information should I request from the seller before making a payment? Are certificates of authenticity reliable, and is there a way to verify the history of an artwork independently?',
+			answers: [
+				{
+					'answer-date': '2026-09-25T12:57:33Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'Ask for provenance information, photographs of the artwork, and a certificate of authenticity when available. For valuable pieces, an independent expert assessment is worth considering.'
+				}
+			]
+		},
+		{
+			id: 'C7wP2mK9xVa',
+			'published-date': '2026-09-26T07:38:12Z',
+			author: 'K5xR9tN4bWp',
+			title: 'Is it possible to make a living from selling paintings?',
+			description: 'I have been painting as a hobby for many years and recently started thinking about turning it into a full-time profession. I understand that building a customer base takes time, but I would like to know whether selling original paintings can provide a stable income. What other services or creative opportunities do professional painters usually combine with artwork sales to make their business more sustainable?',
+			answers: [
+				{
+					'answer-date': '2026-09-26T10:45:28Z',
+					user: 'V2qM6rX9jKb',
+					answer: 'It is possible, but relying only on original painting sales can be unpredictable. Many artists combine commissions, prints, workshops, and licensing.'
+				},
+				{
+					'answer-date': '2026-09-26T14:19:06Z',
+					user: 'R2vK8mJ5sYp',
+					answer: 'Build your audience gradually and keep track of your expenses. Having several income sources can make a creative business more stable.'
+				}
+			]
+		},
+		{
+			id: 'D2xR6nM8pWq',
+			'published-date': '2026-09-27T13:16:44Z',
+			author: 'Z8pD2mQ6vHs',
+			title: 'Which digital art software is best for professional work?',
+			description: 'I have been using free drawing applications for some time and now want to move to more advanced software. My main interests are character illustration, concept art, and detailed digital painting. There are several popular programs available, each offering different brushes and features. I would like to hear recommendations from professional artists who have experience using these tools for commercial projects.',
+			answers: [
+				{
+					'answer-date': '2026-09-27T15:38:19Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'Clip Studio Paint is excellent for illustration, while Photoshop offers a wide range of professional tools. The best choice depends on your workflow.'
+				}
+			]
+		},
+		{
+			id: 'E5mK9qT3vXb',
+			'published-date': '2026-09-28T09:05:27Z',
+			author: 'M3sV8qL2fZn',
+			title: 'How should artists package original paintings for shipping?',
+			description: 'I have recently started receiving orders from customers in other countries and need to organize international shipping for my paintings. I am worried about possible damage during transportation, especially when sending framed or large canvas artworks. What packaging materials and shipping methods would you recommend? I would also like to know whether artists normally include insurance in the delivery price.',
+			answers: [
+				{
+					'answer-date': '2026-09-28T11:44:52Z',
+					user: 'R2vK8mJ5sYp',
+					answer: 'Use protective wrapping, rigid cardboard or wooden packaging, and proper corner protection. For expensive original artworks, shipping insurance is highly recommended.'
+				},
+				{
+					'answer-date': '2026-09-28T14:27:31Z',
+					user: 'V2qM6rX9jKb',
+					answer: 'Always photograph the packaging process and check the carrier requirements for international shipments. This can help if a delivery problem occurs.'
+				}
+			]
+		},
+		{
+			id: 'F8nW3pL6xQk',
+			'published-date': '2026-09-29T12:47:03Z',
+			author: 'Q4mZ8rT2vKx',
+			title: 'Can artists collaborate on a single artwork?',
+			description: 'I recently saw several collaborative art projects where two or more artists worked together to create one final piece. This idea sounds interesting, but I am curious about how such collaborations are usually organized. How do artists divide responsibilities, agree on creative decisions, and share the payment if the artwork is sold? I would love to hear about positive experiences with collaborative projects.',
+			answers: [
+				{
+					'answer-date': '2026-09-29T15:21:48Z',
+					user: 'X6qT1nB8zLm',
+					answer: 'Collaboration can be a great experience. The most important thing is to agree on responsibilities, deadlines, copyright, and payment distribution before starting.'
+				}
+			]
+		},
+		{
+			id: 'G3pV7xN2mRc',
+			'published-date': '2026-09-30T08:29:16Z',
+			author: 'V2qM6rX9jKb',
+			title: 'What should I look for when buying my first original artwork?',
+			description: 'I have always appreciated original paintings and would like to purchase my first piece for my home. However, I have very little experience with art collecting and do not know where to begin. Should I choose something that matches my interior design, focus on the artist reputation, or simply buy something that creates an emotional connection? I would appreciate advice about finding reliable sellers and choosing artwork that I will enjoy for many years.',
+			answers: [
+				{
+					'answer-date': '2026-09-30T10:54:39Z',
+					user: 'M3sV8qL2fZn',
+					answer: 'Choose something you genuinely enjoy looking at. Check the artist information, authenticity, materials, and condition before purchasing.'
+				},
+				{
+					'answer-date': '2026-09-30T13:18:22Z',
+					user: 'Z8pD2mQ6vHs',
+					answer: 'You do not need to start with an expensive piece. Discover emerging artists and visit local exhibitions to find something meaningful within your budget.'
+				}
+			]
+		}
 	]
+
 }

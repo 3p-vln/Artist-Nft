@@ -13,8 +13,13 @@ export class NftInfo {
 		const imgBgColor = this.nftInfoContainer.querySelector('.picture');
 		imgBgColor.classList.add(`picture_${data.bgColor}`);
 		
-		const img = this.nftInfoContainer.querySelector('.picture__img img')
-		img.src = data.img;
+		const img = this.nftInfoContainer.querySelector('.picture__img')
+		img.innerHTML = `
+		<picture>
+			<source srcset="${data.img}.webp" type="image/webp">
+			<img src="${data.img}.png" alt="nft-art">
+		</picture>
+		`;
 		
 		const type = this.nftInfoContainer.querySelector('.info__type');
 		type.textContent = data.type;

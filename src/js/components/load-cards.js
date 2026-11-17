@@ -43,7 +43,10 @@ export class LoadCards {
 		nftPictureImg.classList.add('picture__img');
 		
 		nftPictureImg.innerHTML = `
-		<img src="${card.img}" alt="nft-art">
+		<picture>
+			<source srcset="${card.img}.webp" type="image/webp">
+			<img src="${card.img}.png" alt="nft-art">
+		</picture>
 		`;
 		
 		const nftInfo = document.createElement('div');

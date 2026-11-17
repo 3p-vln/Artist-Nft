@@ -43,12 +43,16 @@ export class ProccessInfo{
 		const authorImg = document.createElement('div');
 		authorImg.classList.add('author_img');
 		authorImg.innerHTML = `
-			<img src="${data.ownerImg ? data.ownerImg : 'img/components/cards/pechen-auth.png'}" alt="author">
+		<picture>
+			<source srcset="${data.ownerImg ? data.ownerImg : 'img/components/cards/pechen-auth'}.webp" type="image/webp">
+			<img src="${data.ownerImg ? data.ownerImg : 'img/components/cards/pechen-auth'}.png" alt="author">
+		</picture>
 		`;
 		
 		const author = document.createElement('p');
+		const authorData = database.users.find(item => item.id === data.owner)
 		author.classList.add('author__name');
-		author.innerText = data.owner;
+		author.innerText = authorData.name + ' ' + authorData.surname;
 		
 		const premium = document.createElement('div');
 		premium.classList.add('info__premium');

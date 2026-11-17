@@ -27,7 +27,7 @@ export class Orders {
 			}
 		}
 		
-		if (!orders) {
+		if (!orders && this.orders.length) {
 			new FilterTable('orders', this.orders, () => {
 				this.init();
 			});
@@ -36,6 +36,12 @@ export class Orders {
 	
 	init() {
 		this.clearOrders();
+		
+		if (!this.orders.length) {
+			this.emptyOrders()
+			
+			return;
+		}
 		
 		this.orders.forEach(order => {
 			this.renderOrder(order);
@@ -143,5 +149,16 @@ export class Orders {
 		
 		showMore.style.display = 'none';
 		info.style.height = 'fit-content';
+	}
+	
+	emptyOrders(){
+		const table = document.querySelector('.orders__table .table__head');
+		table.parentElement.removeChild(table);
+		
+		const emptyText = document.createElement('li');
+		emptyText.classList.add('table__empty');
+		emptyText.innerHTML = 'Your order history is empty. <br>Start shopping and place your first order today!';
+		
+		this.ordersContainer.appendChild(emptyText);
 	}
 }
